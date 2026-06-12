@@ -1,0 +1,178 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* === NEXO DIGITAL — Design Tokens === */
+  /* Backgrounds */
+  --color-bg-base: #0A0A0F;
+  --color-bg-elevated: #111827;
+  --color-bg-overlay: #0D1117;
+  --color-bg-surface: #1F2937;
+  --color-bg-surface-hover: #374151;
+  --color-bg-surface-active: #4B5563;
+
+  /* Textos */
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #9CA3AF;
+  --color-text-tertiary: #6B7280;
+  --color-text-inverse: #0A0A0F;
+  --color-text-link: #3B82F6;
+
+  /* Acoes */
+  --color-primary: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-primary-active: #1D4ED8;
+  --color-primary-muted: rgba(59, 130, 246, 0.15);
+  --color-on-primary: #FFFFFF;
+
+  --color-secondary: #10B981;
+  --color-secondary-hover: #059669;
+  --color-on-secondary: #FFFFFF;
+
+  /* Estados */
+  --color-success: #10B981;
+  --color-success-muted: rgba(16, 185, 129, 0.15);
+  --color-warning: #F59E0B;
+  --color-warning-muted: rgba(245, 158, 11, 0.15);
+  --color-error: #EF4444;
+  --color-error-muted: rgba(239, 68, 68, 0.15);
+  --color-info: #3B82F6;
+  --color-info-muted: rgba(59, 130, 246, 0.15);
+
+  /* Bordas */
+  --color-border-subtle: rgba(31, 41, 55, 0.6);
+  --color-border-default: #374151;
+  --color-border-strong: #4B5563;
+
+  /* Tags/Status */
+  --color-tag-available: rgba(16, 185, 129, 0.15);
+  --color-tag-available-text: #10B981;
+  --color-tag-beta: rgba(245, 158, 11, 0.15);
+  --color-tag-beta-text: #F59E0B;
+  --color-tag-coming: rgba(107, 114, 128, 0.15);
+  --color-tag-coming-text: #6B7280;
+  --color-tag-demo: rgba(139, 92, 246, 0.15);
+  --color-tag-demo-text: #8B5CF6;
+
+  /* Rating */
+  --color-star-filled: #FBBF24;
+  --color-star-empty: #374151;
+
+  /* Tipografia */
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
+
+  /* Sombras dark-optimized */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.15);
+
+  /* Safe areas */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+
+  /* App height fix */
+  --app-height: 100vh;
+  --app-height-dvh: 100dvh;
+
+  /* shadcn/ui token overrides */
+  --color-background: var(--color-bg-base);
+  --color-foreground: var(--color-text-primary);
+  --color-card: var(--color-bg-surface);
+  --color-card-foreground: var(--color-text-primary);
+  --color-popover: var(--color-bg-elevated);
+  --color-popover-foreground: var(--color-text-primary);
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-on-primary);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-on-secondary);
+  --color-muted: var(--color-bg-surface);
+  --color-muted-foreground: var(--color-text-secondary);
+  --color-accent: var(--color-bg-surface-hover);
+  --color-accent-foreground: var(--color-text-primary);
+  --color-destructive: var(--color-error);
+  --color-destructive-foreground: var(--color-text-primary);
+  --color-border: var(--color-border-default);
+  --color-input: var(--color-bg-surface);
+  --color-ring: var(--color-primary);
+  --radius: 0.625rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+
+  body {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+    min-height: var(--app-height-dvh);
+    min-height: var(--app-height);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+  }
+
+  * {
+    border-color: var(--color-border-default);
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border-default);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-border-strong);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .touch-pan-y {
+    touch-action: pan-y;
+  }
+
+  .safe-area-top {
+    padding-top: var(--safe-top);
+  }
+  .safe-area-bottom {
+    padding-bottom: var(--safe-bottom);
+  }
+  .safe-area-x {
+    padding-left: var(--safe-left);
+    padding-right: var(--safe-right);
+  }
+}
