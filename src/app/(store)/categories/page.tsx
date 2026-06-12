@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Category } from "@/types/app";
 import { mockApi } from "@/lib/api-client";
-import { CreditCard, Cloud, Globe, Smartphone, Monitor, Settings } from "lucide-react";
+import { CreditCard, Cloud, Globe, Smartphone, Monitor, Settings, Heart, ShoppingBag, UtensilsCrossed } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
-  CreditCard, Cloud, Globe, Smartphone, Monitor, Settings,
+  CreditCard, Cloud, Globe, Smartphone, Monitor, Settings, Heart, ShoppingBag, UtensilsCrossed,
 };
 
 export default function CategoriesPage() {

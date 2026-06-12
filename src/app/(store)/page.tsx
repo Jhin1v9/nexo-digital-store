@@ -395,10 +395,10 @@ export default function HomePage() {
   }, []);
 
   const featuredApps = apps.filter((a) =>
-    ["tpv-003", "tpv-004", "saas-001", "saas-004", "site-002"].includes(a.id)
+    ["tpv-001", "saas-001", "saas-003", "site-001", "site-002"].includes(a.id)
   );
   const newArrivals = apps.filter((a) =>
-    ["tpv-002", "tpv-004", "tpv-001", "tpv-011", "saas-003", "tpv-019"].includes(a.id)
+    ["saas-002", "site-003", "site-004", "app-001", "prog-001"].includes(a.id)
   );
   const popularApps = [...apps]
     .sort((a, b) => b.downloadCount - a.downloadCount)

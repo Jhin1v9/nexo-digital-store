@@ -95,7 +95,7 @@ export function AppDetailPageClient({ slug }: { slug: string }) {
                 key={i}
                 className="w-[200px] h-[360px] rounded-2xl bg-[#141419] border border-[#2A2A35] overflow-hidden shrink-0 snap-start flex items-center justify-center"
               >
-                <img src={src} alt={`Screenshot ${i + 1}`} className="w-full h-full object-cover opacity-60" />
+                <img src={src} alt={`Screenshot ${i + 1}`} className="w-full h-full object-cover object-center opacity-60" />
               </div>
             ))}
           </div>
@@ -155,11 +155,17 @@ export function AppDetailPageClient({ slug }: { slug: string }) {
           className="flex gap-3 pt-4 pb-6"
         >
           <button
-            onClick={() => router.push(`/demo/${app.slug}`)}
+            onClick={() => {
+              if (app.demoUrl?.startsWith("http")) {
+                window.open(app.demoUrl, "_blank", "noopener,noreferrer");
+              }
+            }}
+            disabled={!app.demoUrl?.startsWith("http")}
             className={cn(
               "flex-1 h-12 rounded-2xl flex items-center justify-center gap-2",
               "bg-[#141419] border border-[#3B82F6] text-[#3B82F6] font-medium text-sm",
-              "hover:bg-[#3B82F6]/10 transition-colors"
+              "hover:bg-[#3B82F6]/10 transition-colors",
+              "disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent"
             )}
           >
             <Play className="w-4 h-4" />
