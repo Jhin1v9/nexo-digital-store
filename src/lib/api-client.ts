@@ -117,21 +117,17 @@ export const apiClient = {
 export { APIError };
 
 // ===== Mock API functions =====
-import { mockApps, mockReviews, mockCategories, getAppBySlug } from "@/lib/mock-data";
+import { mockApps, mockCategories, getAppBySlug } from "@/lib/mock-data";
+import { getReviewStore } from "@/lib/review-store";
+import { notifyTelegramReview } from "@/lib/telegram";
 import { AppProduct, Review, Category, AppFilter, PaginatedApps } from "@/types/app";
 import { WhiteLabelConfigInput } from "@/lib/validators";
 import { ContactFormInput, ReviewFormInput } from "@/lib/validators";
 
 const MOCK_DELAY = 300;
 
-function mockResponse<T>(data: T): Promise<T> {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(data), MOCK_DELAY);
-  });
-}
-
 export const mockApi = {
-  // Apps
+  // Apps / Templates (unified)
   getApps: async (filters?: AppFilter & { page?: number; limit?: string }): Promise<PaginatedApps> => {
     await new Promise((r) => setTimeout(r, MOCK_DELAY));
     let apps = [...mockApps];
@@ -155,6 +151,11 @@ export const mockApi = {
     if (filters?.sense && filters.sense !== "all") apps = apps.filter((a) => a.sense === filters.sense);
     if (filters?.status && filters.status !== "all") apps = apps.filter((a) => a.status === filters.status);
     if (filters?.pricing && filters.pricing !== "all") apps = apps.filter((a) => a.pricing === filters.pricing);
+    if (filters?.category && filters.category !== "all")
+      apps = apps.filter((a) => a.category === filters.category);
+    if (filters?.subcategory)
+      apps = apps.filter((a) => a.subcategory?.toLowerCase() === filters.subcategory?.toLowerCase());
+    if (filters?.source && filters.source !== "all") apps = apps.filter((a) => a.source === filters.source);
 
     const sortBy = filters?.sortBy ?? "relevance";
     if (sortBy === "rating") apps.sort((a, b) => b.rating - a.rating);
@@ -175,6 +176,46 @@ export const mockApi = {
     };
   },
 
+  getTemplates: async (filters?: Omit<AppFilter, "type"> & { page?: number; limit?: string }): Promise<PaginatedApps> => {
+    await new Promise((r) => setTimeout(r, MOCK_DELAY));
+    let templates = mockApps.filter((a) => a.source === "manual" || a.source === "generated" || a.source === "mined");
+
+    if (filters?.search) {
+      const q = filters.search.toLowerCase();
+      templates = templates.filter(
+        (a) =>
+          a.name.toLowerCase().includes(q) ||
+          a.subtitle.toLowerCase().includes(q) ||
+          a.description.toLowerCase().includes(q) ||
+          a.tags.some((t) => t.toLowerCase().includes(q))
+      );
+    }
+    if (filters?.category && filters.category !== "all")
+      templates = templates.filter((a) => a.category === filters.category);
+    if (filters?.subcategory)
+      templates = templates.filter((a) => a.subcategory?.toLowerCase() === filters.subcategory?.toLowerCase());
+    if (filters?.source && filters.source !== "all")
+      templates = templates.filter((a) => a.source === filters.source);
+
+    const sortBy = filters?.sortBy ?? "newest";
+    if (sortBy === "rating") templates.sort((a, b) => b.rating - a.rating);
+    else if (sortBy === "newest") templates.sort((a, b) => new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime());
+    else if (sortBy === "popular") templates.sort((a, b) => b.downloadCount - a.downloadCount);
+
+    const limit = parseInt(filters?.limit ?? "20", 10);
+    const page = filters?.page ?? 1;
+    const start = (page - 1) * limit;
+    const paginated = templates.slice(start, start + limit);
+
+    return {
+      apps: paginated,
+      total: templates.length,
+      page,
+      totalPages: Math.ceil(templates.length / limit),
+      hasMore: start + limit < templates.length,
+    };
+  },
+
   getApp: async (slug: string): Promise<AppProduct | null> => {
     await new Promise((r) => setTimeout(r, MOCK_DELAY));
     return getAppBySlug(slug) ?? null;
@@ -183,23 +224,46 @@ export const mockApi = {
   // Reviews
   getReviews: async (appId?: string): Promise<Review[]> => {
     await new Promise((r) => setTimeout(r, MOCK_DELAY));
-    if (appId) return mockReviews.filter((r) => r.appId === appId);
-    return mockReviews;
+    return getReviewStore().getReviews(appId ? { appId } : undefined);
   },
 
   createReview: async (data: ReviewFormInput & { appId: string }): Promise<Review> => {
     await new Promise((r) => setTimeout(r, MOCK_DELAY));
-    const review: Review = {
-      id: `rev-${Date.now()}`,
+    const store = getReviewStore();
+    const review = await store.createReview({
       appId: data.appId,
       author: data.author,
       rating: data.rating,
       title: data.title,
       body: data.body,
-      date: new Date().toISOString().split("T")[0],
-      helpful: 0,
-    };
+    });
+
+    // Notify Luna via Telegram (fire-and-forget)
+    const app = getAppBySlug(data.appId) ?? mockApps.find((a) => a.id === data.appId);
+    if (app) {
+      notifyTelegramReview({
+        appName: app.name,
+        appSlug: app.slug,
+        author: review.author,
+        rating: review.rating,
+        title: review.title,
+        body: review.body,
+        reviewId: review.id,
+      }).catch((err) => console.error("[notifyTelegramReview]", err));
+    }
+
     return review;
+  },
+
+  createReviewReply: async (reviewId: string, data: { responder: "developer" | "luna"; content: string; chatId?: string; name?: string }): Promise<Review> => {
+    await new Promise((r) => setTimeout(r, MOCK_DELAY));
+    return getReviewStore().createReply({
+      reviewId,
+      responder: data.responder,
+      name: data.name,
+      content: data.content,
+      chatId: data.chatId,
+    });
   },
 
   // Categories
@@ -224,7 +288,7 @@ export const mockApi = {
   },
 
   // Chat
-  sendChatMessage: async (content: string): Promise<{ content: string; suggestions?: string[] }> => {
+  sendChatMessage: async (_content: string): Promise<{ content: string; suggestions?: string[] }> => {
     await new Promise((r) => setTimeout(r, MOCK_DELAY + 200));
     const responses = [
       "Ola! Como posso ajudar voce hoje? Posso tirar duvidas sobre nossos apps e solucoes.",

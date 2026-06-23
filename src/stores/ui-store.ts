@@ -1,9 +1,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { ThemeMode, Toast, BottomSheetState, Notification } from "@/types/ui";
-import { nanoid } from "nanoid";
 
-// Simple nanoid replacement
 function generateId(): string {
   return Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
 }
@@ -35,7 +33,7 @@ interface UIStore {
 export const useUIStore = create<UIStore>()(
   persist(
     (set) => ({
-      theme: "dark",
+      theme: "light",
       sidebarOpen: false,
       toasts: [],
       bottomSheet: { isOpen: false, view: null },

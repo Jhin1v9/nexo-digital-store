@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { I18nProvider } from "@/i18n";
 import { defaultMetadata } from "@/lib/seo";
 
 const inter = Inter({
@@ -15,10 +16,8 @@ export const metadata: Metadata = defaultMetadata;
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   viewportFit: "cover",
-  themeColor: "#0A0A0F",
+  themeColor: "#FFFFFF",
 };
 
 export default function RootLayout({
@@ -28,15 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="pt-BR"
-      className={`${inter.variable} dark h-full antialiased`}
+      lang="en"
+      className={`${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </head>
-      <body className="min-h-full bg-[#0A0A0F] text-[#F1F5F9] font-sans overflow-x-hidden">
-        {children}
+      <body className="min-h-full bg-background text-foreground font-sans overflow-x-hidden">
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

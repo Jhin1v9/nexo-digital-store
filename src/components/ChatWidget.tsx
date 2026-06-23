@@ -4,9 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MessageSquare, X, Send, Bot, User } from "lucide-react";
 import { useChatStore } from "@/stores/chat-store";
 import { useState, useRef, useEffect } from "react";
+import { useI18n } from "@/i18n";
 import { cn } from "@/lib/utils";
 
 export function ChatWidget() {
+  const { t } = useI18n();
   const { isOpen, toggleChat, sendMessage, isLoading, getMessages, createSession } = useChatStore();
   const messages = getMessages();
   const [input, setInput] = useState("");
@@ -41,11 +43,11 @@ export function ChatWidget() {
           }}
           className={cn(
             "fixed bottom-24 right-4 z-[60] w-14 h-14 rounded-full",
-            "bg-[#3B82F6] text-white shadow-lg shadow-blue-500/20",
+            "bg-primary text-on-primary shadow-lg shadow-primary/25",
             "flex items-center justify-center",
-            "hover:bg-[#2563EB] transition-colors"
+            "hover:bg-primary-hover transition-colors"
           )}
-          aria-label="Abrir chat"
+          aria-label={t("chat.open")}
         >
           <MessageSquare className="w-6 h-6" />
         </motion.button>
@@ -61,28 +63,28 @@ export function ChatWidget() {
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             className={cn(
               "fixed bottom-24 right-4 z-[60] w-[calc(100vw-2rem)] max-w-sm",
-              "bg-[#141419] border border-[#2A2A35] rounded-2xl shadow-2xl",
+              "bg-background border border-border-default rounded-3xl shadow-2xl shadow-black/10",
               "flex flex-col overflow-hidden"
             )}
-            style={{ height: "min(480px, 60vh)" }}
+            style={{ height: "min(520px, 65vh)" }}
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-4 py-3 border-b border-[#2A2A35] shrink-0">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-[#3B82F6]/20 flex items-center justify-center">
-                  <Bot className="w-4 h-4 text-[#3B82F6]" />
+            <div className="flex items-center justify-between px-4 py-3 border-b border-border-default shrink-0 bg-surface-secondary/50">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Bot className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#F1F5F9]">NEXO AI</p>
-                  <p className="text-[10px] text-[#10B981]">Online</p>
+                  <p className="text-sm font-semibold text-text-primary">{t("chat.title")}</p>
+                  <p className="text-[10px] text-success font-medium">{t("chat.online")}</p>
                 </div>
               </div>
               <button
                 onClick={toggleChat}
-                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/5 transition-colors"
-                aria-label="Fechar chat"
+                className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-tertiary transition-colors"
+                aria-label={t("chat.close")}
               >
-                <X className="w-4 h-4 text-[#94A3B8]" />
+                <X className="w-4 h-4 text-text-secondary" />
               </button>
             </div>
 
@@ -100,32 +102,35 @@ export function ChatWidget() {
                     className={cn(
                       "w-7 h-7 rounded-full flex items-center justify-center shrink-0",
                       msg.role === "user"
-                        ? "bg-[#1E1E24]"
-                        : "bg-[#3B82F6]/20"
+                        ? "bg-surface-tertiary"
+                        : "bg-primary/10"
                     )}
                   >
                     {msg.role === "user" ? (
-                      <User className="w-3.5 h-3.5 text-[#94A3B8]" />
+                      <User className="w-3.5 h-3.5 text-text-secondary" />
                     ) : (
-                      <Bot className="w-3.5 h-3.5 text-[#3B82F6]" />
+                      <Bot className="w-3.5 h-3.5 text-primary" />
                     )}
                   </div>
                   <div
                     className={cn(
-                      "max-w-[80%] rounded-2xl px-3 py-2 text-sm leading-relaxed",
+                      "max-w-[80%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed shadow-sm",
                       msg.role === "user"
-                        ? "bg-[#3B82F6] text-white rounded-br-md"
-                        : "bg-[#1E1E24] text-[#F1F5F9] rounded-bl-md border border-[#2A2A35]"
+                        ? "bg-primary text-on-primary rounded-br-md"
+                        : "bg-surface-secondary text-text-primary rounded-bl-md border border-border-default"
                     )}
                   >
                     {msg.content}
                     {msg.suggestions && msg.suggestions.length > 0 && (
-                      <div className="mt-2 flex flex-wrap gap-1.5">
+                      <div className="mt-2.5 flex flex-wrap gap-1.5">
                         {msg.suggestions.map((s) => (
                           <button
                             key={s}
                             onClick={() => sendMessage(s)}
-                            className="text-xs px-2 py-1 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                            className={cn(
+                              "text-xs px-2.5 py-1 rounded-full border transition-colors",
+                              "border-border-default bg-background hover:bg-surface-tertiary text-text-primary"
+                            )}
                           >
                             {s}
                           </button>
@@ -137,14 +142,14 @@ export function ChatWidget() {
               ))}
               {isLoading && (
                 <div className="flex gap-2">
-                  <div className="w-7 h-7 rounded-full bg-[#3B82F6]/20 flex items-center justify-center shrink-0">
-                    <Bot className="w-3.5 h-3.5 text-[#3B82F6] animate-pulse" />
+                  <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Bot className="w-3.5 h-3.5 text-primary animate-pulse" />
                   </div>
-                  <div className="bg-[#1E1E24] border border-[#2A2A35] rounded-2xl rounded-bl-md px-3 py-2">
+                  <div className="bg-surface-secondary border border-border-default rounded-2xl rounded-bl-md px-3.5 py-2.5">
                     <div className="flex gap-1">
-                      <span className="w-1.5 h-1.5 bg-[#475569] rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-                      <span className="w-1.5 h-1.5 bg-[#475569] rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-                      <span className="w-1.5 h-1.5 bg-[#475569] rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                      <span className="w-1.5 h-1.5 bg-text-muted rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                      <span className="w-1.5 h-1.5 bg-text-muted rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                      <span className="w-1.5 h-1.5 bg-text-muted rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
                     </div>
                   </div>
                 </div>
@@ -154,17 +159,17 @@ export function ChatWidget() {
             {/* Input */}
             <form
               onSubmit={handleSubmit}
-              className="shrink-0 p-3 border-t border-[#2A2A35] flex gap-2"
+              className="shrink-0 p-3 border-t border-border-default flex gap-2 bg-surface-secondary/50"
             >
               <input
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Digite sua mensagem..."
+                placeholder={t("chat.placeholder")}
                 className={cn(
-                  "flex-1 bg-[#1E1E24] border border-[#2A2A35] rounded-xl px-3 py-2 text-sm",
-                  "text-[#F1F5F9] placeholder:text-[#475569]",
-                  "focus:outline-none focus:border-[#3B82F6] transition-colors"
+                  "flex-1 bg-background border border-border-default rounded-xl px-3 py-2 text-sm",
+                  "text-text-primary placeholder:text-text-muted",
+                  "focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                 )}
               />
               <button
@@ -173,10 +178,10 @@ export function ChatWidget() {
                 className={cn(
                   "w-9 h-9 rounded-xl flex items-center justify-center transition-colors",
                   input.trim()
-                    ? "bg-[#3B82F6] text-white hover:bg-[#2563EB]"
-                    : "bg-[#1E1E24] text-[#475569]"
+                    ? "bg-primary text-on-primary hover:bg-primary-hover"
+                    : "bg-surface-tertiary text-text-muted"
                 )}
-                aria-label="Enviar"
+                aria-label={t("chat.send")}
               >
                 <Send className="w-4 h-4" />
               </button>

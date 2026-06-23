@@ -1,18 +1,19 @@
-export const metadata = {
-  title: "Sobre — NEXO Digital Store",
-  description: "Conheça a NEXO Digital S.L. e o ecossistema de apps para negócios.",
-};
+"use client";
+
+import { useI18n } from "@/i18n";
 
 export default function AboutPage() {
+  const { t } = useI18n();
+
   return (
-    <div className="w-full px-4 py-6 max-w-lg mx-auto">
-      <h1 className="text-2xl font-bold text-[#F1F5F9] mb-4">Sobre a NEXO</h1>
-      <p className="text-sm text-[#94A3B8] leading-relaxed mb-4">
-        A NEXO Digital S.L. é uma software house focada em criar soluções digitais prontas para uso: TPVs, SaaS, sites, jogos e software sob medida.
-      </p>
-      <p className="text-sm text-[#94A3B8] leading-relaxed">
-        Nossa missão é potencializar negócios com tecnologia moderna, acessível e escalável.
-      </p>
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-8 max-w-2xl mx-auto">
+      <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-6 tracking-tight">
+        {t("about.title")}
+      </h1>
+      <div className="space-y-4 text-sm sm:text-base text-text-secondary leading-relaxed">
+        <p>{t("about.p1")}</p>
+        <p>{t("about.p2")}</p>
+      </div>
     </div>
   );
 }

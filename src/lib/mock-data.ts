@@ -1,4 +1,6 @@
-import { AppProduct, Review, Category, AppType, Framework, Industry, Sense, AppStatus, Pricing } from "@/types/app";
+import { AppProduct, Review, ReviewReply, Category, AppType, Framework, Industry, Sense, AppStatus, Pricing } from "@/types/app";
+import { mockLPCTemplates } from "@/lib/mock-templates";
+import { adaptLPCTemplates } from "@/lib/template-adapter";
 
 const developer = "NEXO Digital S.L.";
 
@@ -787,17 +789,91 @@ const driveApps: AppProduct[] = [
   ),
 ];
 
-export const mockApps: AppProduct[] = [...tpvs, ...saasApps, ...sites, ...apps, ...programs, ...custom, ...driveApps];
+// ===== LP Creator templates (unified as AppProduct) =====
+const mockTemplateProducts: AppProduct[] = adaptLPCTemplates(mockLPCTemplates);
+
+export const mockApps: AppProduct[] = [
+  ...tpvs,
+  ...saasApps,
+  ...sites,
+  ...apps,
+  ...programs,
+  ...custom,
+  ...driveApps,
+  ...mockTemplateProducts,
+];
+
+const lpCategories = new Set([
+  "business",
+  "startup",
+  "portfolio",
+  "ecommerce",
+  "saas",
+  "agency",
+  "personal",
+  "event",
+  "landing",
+  "other",
+]);
 
 export const mockReviews: Review[] = [
-  { id: "rev-001", appId: "tpv-001", author: "Ana Silva", rating: 5, title: "Perfeito para minha sorveteria", body: "O pack completo facilitou muito o atendimento. Cliente pede pelo celular, cozinha vê no KDS e eu controlo tudo no admin.", date: "2026-05-20", helpful: 18 },
-  { id: "rev-002", appId: "tpv-001", author: "Pedro Costa", rating: 5, title: "Kiosk touch é show", body: "Clientes adoram o autoatendimento na mesa. Interface linda e rápida.", date: "2026-04-12", helpful: 12 },
+  {
+    id: "rev-001",
+    appId: "tpv-001",
+    author: "Ana Silva",
+    rating: 5,
+    title: "Perfeito para minha sorveteria",
+    body: "O pack completo facilitou muito o atendimento. Cliente pede pelo celular, cozinha vê no KDS e eu controlo tudo no admin.",
+    date: "2026-05-20",
+    helpful: 18,
+    replies: [
+      {
+        id: "rep-001",
+        reviewId: "rev-001",
+        responder: "developer",
+        name: "NEXO Digital",
+        content: "Obrigado, Ana! Ficamos felizes que o pack esteja ajudando no dia a dia da sorveteria. Qualquer ajuste é só chamar.",
+        date: "2026-05-21",
+      },
+    ],
+  },
+  {
+    id: "rev-002",
+    appId: "tpv-001",
+    author: "Pedro Costa",
+    rating: 5,
+    title: "Kiosk touch é show",
+    body: "Clientes adoram o autoatendimento na mesa. Interface linda e rápida.",
+    date: "2026-04-12",
+    helpful: 12,
+    replies: [
+      {
+        id: "rep-002",
+        reviewId: "rev-002",
+        responder: "luna",
+        name: "Luna",
+        content: "Que legal, Pedro! Se quiser, posso te mostrar como customizar o cardápio do kiosk pelo painel. É só abrir o chat aqui na loja.",
+        date: "2026-04-13",
+        chatId: "chat-tpv-kiosk",
+      },
+    ],
+  },
   { id: "rev-003", appId: "saas-001", author: "Equipe NEXO", rating: 5, title: "Centraliza tudo", body: "Dashboard Pro nos dá visão completa dos projetos, GitHub e deploys.", date: "2026-05-15", helpful: 9 },
   { id: "rev-004", appId: "site-002", author: "Construcciones Santa Fe", rating: 5, title: "Site profissional", body: "Galeria de obras e formulário de contato trouxeram mais clientes.", date: "2026-03-10", helpful: 14 },
   { id: "rev-005", appId: "prog-001", author: "Dev NEXO", rating: 5, title: "Luna é incrível", body: "Assistente autônomo que realmente ajuda no dia a dia dos projetos.", date: "2026-05-28", helpful: 11 },
   { id: "rev-006", appId: "saas-002", author: "Startup Tech", rating: 4, title: "Bug reporting inteligente", body: "A IA ajuda a priorizar bugs críticos. Faltam algumas integrações, mas está evoluindo bem.", date: "2026-05-05", helpful: 7 },
   { id: "rev-007", appId: "site-001", author: "NEXO Marketing", rating: 5, title: "Nosso site oficial", body: "Site rápido, moderno e bem posicionado.", date: "2026-06-01", helpful: 8 },
-  { id: "rev-008", appId: "cust-001", author: "Empresa Custom Ltda", rating: 5, title: "Software perfeito", body: "A NEXO entregou exatamente o que precisávamos.", date: "2025-12-12", helpful: 25, developerResponse: "Agradecemos a confiança! Foi um prazer trabalhar com vocês." },
+  {
+    id: "rev-008",
+    appId: "cust-001",
+    author: "Empresa Custom Ltda",
+    rating: 5,
+    title: "Software perfeito",
+    body: "A NEXO entregou exatamente o que precisávamos.",
+    date: "2025-12-12",
+    helpful: 25,
+    developerResponse: "Agradecemos a confiança! Foi um prazer trabalhar com vocês.",
+  },
 ];
 
 export const mockCategories: Category[] = [
@@ -810,10 +886,39 @@ export const mockCategories: Category[] = [
   { id: "cat-clinics", name: "Clínicas", slug: "clinics", icon: "Heart", description: "Apps para clínicas, estética e saúde", count: getAppsByCategory("clinics").length, color: "#F43F5E" },
   { id: "cat-retail", name: "Retail", slug: "retail", icon: "ShoppingBag", description: "Soluções para varejo e e-commerce", count: getAppsByCategory("retail").length, color: "#F59E0B" },
   { id: "cat-food", name: "Food", slug: "food", icon: "UtensilsCrossed", description: "Apps para restaurantes, sorveterias e food service", count: getAppsByCategory("food").length, color: "#10B981" },
+  // LP Creator marketplace categories
+  { id: "cat-business", name: "Negócios", slug: "business", icon: "Briefcase", description: "Templates para negócios locais", count: getAppsByCategory("business").length, color: "#3B82F6" },
+  { id: "cat-ecommerce", name: "E-commerce", slug: "ecommerce", icon: "ShoppingCart", description: "Templates de lojas virtuais", count: getAppsByCategory("ecommerce").length, color: "#8B5CF6" },
+  { id: "cat-portfolio", name: "Portfolio", slug: "portfolio", icon: "Image", description: "Templates para portfolios criativos", count: getAppsByCategory("portfolio").length, color: "#F59E0B" },
+  { id: "cat-landing", name: "Landing Pages", slug: "landing", icon: "Layout", description: "Landing pages de alta conversão", count: getAppsByCategory("landing").length, color: "#10B981" },
 ];
 
 export function getReviewsByAppId(appId: string): Review[] {
   return mockReviews.filter((r) => r.appId === appId);
+}
+
+export function addReview(review: Omit<Review, "id">): Review {
+  const newReview: Review = {
+    ...review,
+    id: `rev-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+  };
+  mockReviews.unshift(newReview);
+  return newReview;
+}
+
+export function addReviewReply(reviewId: string, reply: Omit<ReviewReply, "id" | "reviewId">): ReviewReply {
+  const review = mockReviews.find((r) => r.id === reviewId);
+  if (!review) throw new Error("Review not found");
+
+  const newReply: ReviewReply = {
+    ...reply,
+    id: `rep-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+    reviewId,
+  };
+
+  if (!review.replies) review.replies = [];
+  review.replies.push(newReply);
+  return newReply;
 }
 
 export function getAppBySlug(slug: string): AppProduct | undefined {
@@ -824,6 +929,7 @@ export function getAppsByCategory(categorySlug: string): AppProduct[] {
   if (categorySlug === "clinics") return mockApps.filter((a) => a.industry === "health");
   if (categorySlug === "retail") return mockApps.filter((a) => a.industry === "retail");
   if (categorySlug === "food") return mockApps.filter((a) => a.industry === "food");
+  if (lpCategories.has(categorySlug)) return mockApps.filter((a) => a.category === categorySlug);
   return mockApps.filter((a) => a.type === categorySlug);
 }
 

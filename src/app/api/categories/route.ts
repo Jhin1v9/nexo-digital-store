@@ -1,4 +1,3 @@
-// Force static generation for output: export
 import { NextResponse } from "next/server";
 import { mockApi } from "@/lib/api-client";
 
@@ -13,4 +12,3 @@ export async function GET() {
     );
   }
 }
-export const dynamic = "force-static";

@@ -12,11 +12,18 @@ const icons = {
   warning: AlertTriangle,
 };
 
-const borderColors = {
-  success: "border-l-[#10B981]",
-  error: "border-l-[#EF4444]",
-  info: "border-l-[#3B82F6]",
-  warning: "border-l-[#F59E0B]",
+const styles = {
+  success: "border-l-success bg-surface-secondary",
+  error: "border-l-error bg-surface-secondary",
+  info: "border-l-primary bg-surface-secondary",
+  warning: "border-l-warning bg-surface-secondary",
+};
+
+const iconColors = {
+  success: "text-success",
+  error: "text-error",
+  info: "text-primary",
+  warning: "text-warning",
 };
 
 export function Toaster() {
@@ -37,24 +44,24 @@ export function Toaster() {
               transition={{ type: "spring", stiffness: 400, damping: 30 }}
               className={cn(
                 "pointer-events-auto w-full max-w-sm",
-                "bg-[#141419] border border-[#2A2A35] border-l-4 rounded-xl p-3 shadow-lg",
-                borderColors[toast.type]
+                "border border-border-default border-l-4 rounded-xl p-3 shadow-lg shadow-black/5",
+                styles[toast.type]
               )}
             >
               <div className="flex items-start gap-3">
-                <Icon className={cn("w-5 h-5 mt-0.5 shrink-0", `text-[${getColor(toast.type)}]`)} style={{ color: getColorValue(toast.type) }} />
+                <Icon className={cn("w-5 h-5 mt-0.5 shrink-0", iconColors[toast.type])} />
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-[#F1F5F9]">{toast.title}</p>
+                  <p className="text-sm font-medium text-text-primary">{toast.title}</p>
                   {toast.message && (
-                    <p className="text-xs text-[#94A3B8] mt-0.5">{toast.message}</p>
+                    <p className="text-xs text-text-secondary mt-0.5">{toast.message}</p>
                   )}
                 </div>
                 <button
                   onClick={() => removeToast(toast.id)}
-                  className="shrink-0 w-6 h-6 flex items-center justify-center rounded-full hover:bg-white/5 transition-colors"
+                  className="shrink-0 w-6 h-6 flex items-center justify-center rounded-full hover:bg-surface-tertiary transition-colors"
                   aria-label="Fechar"
                 >
-                  <X className="w-3.5 h-3.5 text-[#475569]" />
+                  <X className="w-3.5 h-3.5 text-text-muted" />
                 </button>
               </div>
             </motion.div>
@@ -63,24 +70,4 @@ export function Toaster() {
       </AnimatePresence>
     </div>
   );
-}
-
-function getColor(type: keyof typeof icons): string {
-  const colors: Record<string, string> = {
-    success: "#10B981",
-    error: "#EF4444",
-    info: "#3B82F6",
-    warning: "#F59E0B",
-  };
-  return colors[type] ?? "#3B82F6";
-}
-
-function getColorValue(type: keyof typeof icons): string {
-  const colors: Record<string, string> = {
-    success: "#10B981",
-    error: "#EF4444",
-    info: "#3B82F6",
-    warning: "#F59E0B",
-  };
-  return colors[type] ?? "#3B82F6";
 }

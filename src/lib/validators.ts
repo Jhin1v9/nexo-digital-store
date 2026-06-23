@@ -69,12 +69,13 @@ export const whiteLabelConfigSchema = z.object({
 
 export type WhiteLabelConfigInput = z.infer<typeof whiteLabelConfigSchema>;
 
-// Review form validation
+// Review / comment form validation
+// Rating is optional: 0 means a general comment/question/request.
 export const reviewFormSchema = z.object({
   author: z.string().min(2, "Nome deve ter pelo menos 2 caracteres").max(50, "Nome muito longo"),
-  rating: z.number().min(1, "Selecione uma avaliacao").max(5, "Avaliacao maxima e 5"),
-  title: z.string().min(5, "Titulo deve ter pelo menos 5 caracteres").max(100, "Titulo muito longo"),
-  body: z.string().min(10, "Review deve ter pelo menos 10 caracteres").max(2000, "Review muito longo"),
+  rating: z.number().min(0).max(5, "Avaliacao maxima e 5").default(0),
+  title: z.string().max(100, "Titulo muito longo").optional().or(z.literal("")),
+  body: z.string().min(5, "Comentario deve ter pelo menos 5 caracteres").max(2000, "Comentario muito longo"),
 });
 
 export type ReviewFormInput = z.infer<typeof reviewFormSchema>;
@@ -97,3 +98,13 @@ export const chatMessageSchema = z.object({
 });
 
 export type ChatMessageInput = z.infer<typeof chatMessageSchema>;
+
+// Review reply validation (developer or Luna)
+export const reviewReplySchema = z.object({
+  responder: z.enum(["developer", "luna"]),
+  content: z.string().min(2, "Resposta deve ter pelo menos 2 caracteres").max(2000, "Resposta muito longa"),
+  chatId: z.string().optional(),
+  name: z.string().max(50).optional(),
+});
+
+export type ReviewReplyInput = z.infer<typeof reviewReplySchema>;

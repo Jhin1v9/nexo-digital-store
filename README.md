@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NEXO Digital Store
 
-## Getting Started
+Vitrine pública do ecossistema NEXO: apps, SaaS, sites, jogos e templates da comunidade.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 + React 19 + TypeScript
+- Tailwind CSS v4
+- Zustand, Framer Motion, Lucide, Zod
+- Supabase (opcional, para persistência de comentários)
+
+## Rodar localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy na VPS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Clone e configure
 
-## Learn More
+```bash
+git clone https://github.com/Jhin1v9/nexo-digital-store.git
+cd nexo-digital-store
+cp .env.example .env
+# edite .env com suas chaves (Supabase, Telegram, admin key)
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Opção A — PM2 (recomendado)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Requisitos: Node.js 22+, PM2 instalado globalmente (`npm i -g pm2`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run deploy
+```
 
-## Deploy on Vercel
+Isso instala dependências, builda e inicia/reinicia o app na porta 3000.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Opção B — Docker
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+docker build -t nexo-store .
+docker run -d -p 3000:3000 --env-file .env --name nexo-store nexo-store
+```
+
+### 4. Banco de dados
+
+Se for usar Supabase para os comentários, rode o schema em:
+
+```bash
+docs/reviews-schema.sql
+```
+
+E preencha as variáveis no `.env`:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+ADMIN_API_KEY=
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
+```
+
+## Documentação
+
+- `AGENTS.md` — contexto mestral para agentes de código.
+- `docs/luna-tutorial.md` — tutorial da Luna para gerenciar comentários.
+- `docs/reviews-schema.sql` — schema do Supabase.

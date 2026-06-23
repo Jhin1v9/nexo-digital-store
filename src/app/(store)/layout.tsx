@@ -2,8 +2,10 @@
 
 import { useViewportHeight } from "@/hooks/use-viewport-height";
 import { useOffline } from "@/hooks/use-offline";
+import { useI18n } from "@/i18n";
 import { Navbar } from "@/components/Navbar";
 import { BottomNav } from "@/components/BottomNav";
+import { Footer } from "@/components/Footer";
 import { ChatWidget } from "@/components/ChatWidget";
 import { Toaster } from "@/components/Toaster";
 import { cn } from "@/lib/utils";
@@ -15,19 +17,20 @@ export default function StoreLayout({
 }) {
   useViewportHeight();
   const { isOffline } = useOffline();
+  const { t } = useI18n();
 
   return (
-    <div className="relative min-h-[100dvh] bg-[#0A0A0F]">
+    <div className="relative min-h-[100dvh] bg-background">
       {/* Offline indicator */}
       {isOffline && (
         <div
           className={cn(
-            "fixed top-14 left-0 right-0 z-40 h-9 flex items-center justify-center gap-2",
-            "bg-purple-600 text-white text-xs font-medium animate-pulse"
+            "fixed top-16 left-0 right-0 z-40 h-9 flex items-center justify-center gap-2",
+            "bg-warning text-on-warning text-xs font-medium animate-pulse"
           )}
         >
-          <span className="inline-block w-2 h-2 bg-white rounded-full" />
-          Sem conexao — modo offline ativado
+          <span className="inline-block w-2 h-2 bg-text-inverse rounded-full" />
+          {t("offline")}
         </div>
       )}
 
@@ -37,7 +40,7 @@ export default function StoreLayout({
       {/* Main content */}
       <main
         className={cn(
-          "pt-14 pb-20 min-h-[100dvh]",
+          "pt-16 md:pt-[4.5rem] pb-16 md:pb-0 min-h-[100dvh]",
           isOffline && "pt-[4.25rem]"
         )}
       >
@@ -49,6 +52,9 @@ export default function StoreLayout({
 
       {/* Floating chat widget */}
       <ChatWidget />
+
+      {/* Footer */}
+      <Footer />
 
       {/* Bottom Navigation */}
       <BottomNav />

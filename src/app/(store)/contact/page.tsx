@@ -1,20 +1,27 @@
-export const metadata = {
-  title: "Contato — NEXO Digital Store",
-  description: "Entre em contato com a NEXO Digital S.L.",
-};
+"use client";
+
+import { useI18n } from "@/i18n";
+import { cn } from "@/lib/utils";
 
 export default function ContactPage() {
+  const { t } = useI18n();
+
   return (
-    <div className="w-full px-4 py-6 max-w-lg mx-auto">
-      <h1 className="text-2xl font-bold text-[#F1F5F9] mb-4">Contato</h1>
-      <p className="text-sm text-[#94A3B8] leading-relaxed mb-4">
-        Tem dúvidas ou quer saber mais sobre nossas soluções? Fale conosco pelo chat ou envie um e-mail.
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-8 max-w-2xl mx-auto">
+      <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-6 tracking-tight">
+        {t("contact.title")}
+      </h1>
+      <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-6">
+        {t("contact.p1")}
       </p>
       <a
         href="mailto:hello@nexo-digital.app"
-        className="inline-flex items-center justify-center h-12 px-6 rounded-2xl bg-[#3B82F6] text-white text-sm font-medium hover:bg-[#2563EB] transition-colors"
+        className={cn(
+          "inline-flex items-center justify-center h-12 px-6 rounded-2xl text-sm font-medium",
+          "bg-primary text-on-primary hover:bg-primary-hover transition-colors"
+        )}
       >
-        Enviar e-mail
+        {t("contact.cta")}
       </a>
     </div>
   );

@@ -1,4 +1,3 @@
-// Force static generation for output: export
 import { NextRequest, NextResponse } from "next/server";
 import { mockApi } from "@/lib/api-client";
 import { reviewFormSchema } from "@/lib/validators";
@@ -47,4 +46,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-export const dynamic = "force-static";

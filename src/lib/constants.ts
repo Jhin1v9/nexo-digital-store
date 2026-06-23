@@ -111,21 +111,40 @@ export const APP_DESCRIPTION = "Apps que impulsionam seu negocio. TPVs, SaaS, si
 export const APP_URL = "https://nexodigital.store";
 export const APP_AUTHOR = "NEXO Digital S.L.";
 
-// Theme
+// Theme (legacy reference; prefer Tailwind tokens from globals.css)
 export const THEME_COLORS = {
   primary: "#3B82F6",
-  primaryDark: "#1E3A5F",
-  electricBlue: "#60A5FA",
-  successGreen: "#10B981",
-  bgPrimary: "#0A0A0F",
-  bgElevated: "#141419",
-  bgTertiary: "#1E1E24",
-  borderSubtle: "#2A2A35",
+  primaryHover: "#2563EB",
+  success: "#10B981",
+  background: "#FFFFFF",
+  surface: "#F9FAFB",
+  surfaceTertiary: "#F3F4F6",
+  borderDefault: "#E5E7EB",
   borderFocus: "#3B82F6",
-  textPrimary: "#F1F5F9",
-  textSecondary: "#94A3B8",
-  textMuted: "#475569",
+  textPrimary: "#111827",
+  textSecondary: "#4B5563",
+  textMuted: "#6B7280",
 } as const;
+
+// Footer link groups
+export const footerLinks = [
+  {
+    title: "footer.product",
+    links: [
+      { label: "footer.discover", href: "/discover" },
+      { label: "footer.categories", href: "/categories" },
+      { label: "footer.search", href: "/search" },
+    ],
+  },
+  {
+    title: "footer.company",
+    links: [
+      { label: "footer.about", href: "/about" },
+      { label: "footer.request", href: "/request" },
+      { label: "footer.contact", href: "/contact" },
+    ],
+  },
+] as const;
 
 // Category pills for home
 export const CATEGORY_PILLS = [

@@ -1,20 +1,27 @@
-export const metadata = {
-  title: "Termos — NEXO Digital Store",
-  description: "Termos de uso da NEXO Digital Store.",
-};
+"use client";
+
+import { useI18n } from "@/i18n";
 
 export default function TermsPage() {
+  const { t, messages } = useI18n();
+  const section = (messages as Record<string, unknown>).terms as Record<string, unknown> | undefined;
+  const items = (section?.items as string[]) ?? [];
+
   return (
-    <div className="w-full px-4 py-6 max-w-lg mx-auto">
-      <h1 className="text-2xl font-bold text-[#F1F5F9] mb-4">Termos de Uso</h1>
-      <p className="text-sm text-[#94A3B8] leading-relaxed mb-4">
-        Ao usar a NEXO Digital Store e adquirir nossos produtos, você concorda com os termos descritos abaixo.
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-8 max-w-2xl mx-auto">
+      <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-6 tracking-tight">
+        {t("terms.title")}
+      </h1>
+      <p className="text-sm sm:text-base text-text-secondary leading-relaxed mb-6">
+        {t("terms.p1")}
       </p>
-      <ul className="space-y-3 text-sm text-[#94A3B8]">
-        <li>• Os apps são licenciados conforme o plano contratado (assinatura, fixo ou sob consulta).</li>
-        <li>• Não é permitido revender, redistribuir ou descompilar os produtos sem autorização.</li>
-        <li>• O suporte técnico está disponível conforme o nível do plano adquirido.</li>
-        <li>• Podemos atualizar estes termos a qualquer momento, com comunicação prévia.</li>
+      <ul className="space-y-3 text-sm sm:text-base text-text-secondary">
+        {items.map((item, i) => (
+          <li key={i} className="flex gap-2">
+            <span className="text-primary">•</span>
+            <span>{item}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );
