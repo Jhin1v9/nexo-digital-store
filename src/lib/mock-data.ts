@@ -4,6 +4,15 @@ import { adaptLPCTemplates } from "@/lib/template-adapter";
 
 const developer = "NEXO Digital S.L.";
 
+const CATEGORY_PRICING = {
+  site: { pricing: "fixed" as const, price: 299, currency: "EUR" as const },
+  saas: { pricing: "subscription" as const, price: 49, currency: "EUR" as const },
+  tpv: { pricing: "subscription" as const, price: 79, currency: "EUR" as const },
+  app: { pricing: "free" as const, currency: "EUR" as const },
+  program: { pricing: "subscription" as const, price: 59, currency: "EUR" as const },
+  custom: { pricing: "quote" as const, currency: "EUR" as const },
+};
+
 function makeApp(
   id: string,
   slug: string,
