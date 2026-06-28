@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ChevronRight, Check } from "lucide-react";
 import { useRequestStore } from "@/stores/request-store";
 import { cn } from "@/lib/utils";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { useI18n } from "@/i18n";
 import { mapAppToRequestDefaults } from "@/lib/request-utils";
 import { getAppBySlug } from "@/lib/mock-data";
@@ -26,11 +26,13 @@ export default function RequestPage() {
   const [submitted, setSubmitted] = useState(false);
   const [appName, setAppName] = useState<string | null>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const appSlug = searchParams.get("app");
     if (appSlug) {
       const app = getAppBySlug(appSlug);
       if (app) {
+        // Pre-fill wizard from selected app; one-time sync on mount/query change.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setAppName(app.name);
         setFields(mapAppToRequestDefaults(app));
       }
