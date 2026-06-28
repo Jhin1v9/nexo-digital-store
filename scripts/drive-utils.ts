@@ -31,23 +31,34 @@ export function inferFrameworkFromPath(path: string): Framework {
 }
 
 export function inferIndustryAndSense(path: string): { industry: Industry; sense: Sense } {
-  const p = path.toLowerCase();
+  const p = path
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 
-  if (
+  const isHealth =
     p.includes("clinica") ||
     p.includes("medico") ||
     p.includes("odontologia") ||
+    p.includes("odontologia") ||
     p.includes("botica") ||
     p.includes("farmacia") ||
-    p.includes("gimnasio") ||
-    p.includes("academia") ||
-    p.includes("fitness")
-  ) {
+    p.includes("veterinaria") ||
+    p.includes("laboratorio clinico") ||
+    p.includes("salon de belleza") ||
+    p.includes("peluqueria") ||
+    p.includes("estetica") ||
+    p.includes("spa");
+
+  const isFitness = p.includes("gimnasio") || p.includes("academia") || p.includes("fitness");
+
+  if (isHealth || isFitness) {
     const isBarbearia =
       p.includes("barbearia") ||
       p.includes("peluqueria") ||
       p.includes("estetica") ||
-      p.includes("spa");
+      p.includes("spa") ||
+      p.includes("salon de belleza");
     return { industry: "health", sense: isBarbearia ? "barbearia" : "clinica" };
   }
 
@@ -55,14 +66,17 @@ export function inferIndustryAndSense(path: string): { industry: Industry; sense
     p.includes("restaurante") ||
     p.includes("cafeteria") ||
     p.includes("panaderia") ||
+    p.includes("pasteleria") ||
     p.includes("hamburgueria") ||
     p.includes("food") ||
     p.includes("fastfood") ||
-    p.includes("hosteleria")
+    p.includes("hosteleria") ||
+    p.includes("polleria") ||
+    p.includes("copas")
   ) {
     return {
       industry: "food",
-      sense: p.includes("sorveteria") || p.includes("gelato") ? "sorveteria" : "restaurante",
+      sense: p.includes("sorveteria") || p.includes("gelato") || p.includes("heladeria") ? "sorveteria" : "restaurante",
     };
   }
 
@@ -75,12 +89,15 @@ export function inferIndustryAndSense(path: string): { industry: Industry; sense
     p.includes("papeleria") ||
     p.includes("ferreteria") ||
     p.includes("boutique") ||
-    p.includes("brinquedos")
+    p.includes("brinquedos") ||
+    p.includes("joyeria") ||
+    p.includes("relojeria") ||
+    p.includes("celulares")
   ) {
     return { industry: "retail", sense: "loja" };
   }
 
-  if (p.includes("barbearia") || p.includes("peluqueria") || p.includes("estetica") || p.includes("spa") || p.includes("belleza")) {
+  if (p.includes("barbearia") || p.includes("belleza")) {
     return { industry: "health", sense: "barbearia" };
   }
 
@@ -88,19 +105,53 @@ export function inferIndustryAndSense(path: string): { industry: Industry; sense
     return { industry: "other", sense: "escritorio" };
   }
 
-  if (p.includes("constructor") || p.includes("obra") || p.includes("construccion")) {
+  if (p.includes("constructor") || p.includes("construccion") || p.includes("taller automotriz") || p.includes("taller_automotriz") || p.includes("obra ") || p.includes(" obras")) {
     return { industry: "construction", sense: "outro" };
   }
 
-  if (p.includes("educacion") || p.includes("escuela") || p.includes("academia")) {
+  if (p.includes("educacion") || p.includes("escuela") || p.includes("colegio") || p.includes("universidad") || p.includes("academica") || p.includes("biblioteca")) {
     return { industry: "education", sense: "outro" };
   }
 
-  if (p.includes("finanza") || p.includes("facturacion") || p.includes("contable") || p.includes("banco") || p.includes("prestamo")) {
+  if (
+    p.includes("finanza") ||
+    p.includes("facturacion") ||
+    p.includes("contable") ||
+    p.includes("banco") ||
+    p.includes("prestamo") ||
+    p.includes("cobranza") ||
+    p.includes("cotizacion") ||
+    p.includes("encomienda") ||
+    p.includes("almacen") ||
+    p.includes("inventario")
+  ) {
     return { industry: "finance", sense: "escritorio" };
   }
 
+  if (p.includes("parqueo") || p.includes("estacionamiento") || p.includes("delivery") || p.includes("transporte") || p.includes("agencia de viajes")) {
+    return { industry: "other", sense: "escritorio" };
+  }
+
   return { industry: "other", sense: "outro" };
+}
+
+export function isInstallerFolder(path: string): boolean {
+  const p = path.toLowerCase();
+  const installerTerms = [
+    "instaladores",
+    "laragon",
+    "postgresql",
+    "sql server",
+    "microsoft sql",
+    "dotnet",
+    "sdk .net",
+    ".net sdk",
+    "xampp",
+    "wamp",
+    "node_modules",
+    "vendor",
+  ];
+  return installerTerms.some((term) => p.includes(term));
 }
 
 export function cleanFolderName(name: string): string {
