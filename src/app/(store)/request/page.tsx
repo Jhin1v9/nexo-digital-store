@@ -1,12 +1,14 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowLeft, ChevronRight, Check } from "lucide-react";
 import { useRequestStore } from "@/stores/request-store";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useI18n } from "@/i18n";
+import { mapAppToRequestDefaults } from "@/lib/request-utils";
+import { getAppBySlug } from "@/lib/mock-data";
 
 const businessTypes = ["Sorveteria", "Barbearia", "Restaurante", "Clinica", "Loja", "Escritorio", "Outro"];
 const industries = ["Alimentacao", "Saude", "Varejo", "Servicos", "Educacao", "Outro"];
@@ -19,8 +21,21 @@ const timelines = ["1-2 semanas", "1 mes", "2-3 meses", "Flexivel"];
 export default function RequestPage() {
   const { t } = useI18n();
   const router = useRouter();
-  const { step, formData, setField, nextStep, prevStep, submit, isSubmitting, isComplete, requestId, setStep } = useRequestStore();
+  const searchParams = useSearchParams();
+  const { step, formData, setField, setFields, nextStep, prevStep, submit, isSubmitting, isComplete, requestId, setStep } = useRequestStore();
   const [submitted, setSubmitted] = useState(false);
+  const [appName, setAppName] = useState<string | null>(null);
+
+  useEffect(() => {
+    const appSlug = searchParams.get("app");
+    if (appSlug) {
+      const app = getAppBySlug(appSlug);
+      if (app) {
+        setAppName(app.name);
+        setFields(mapAppToRequestDefaults(app));
+      }
+    }
+  }, [searchParams, setFields]);
 
   const steps = [
     { num: 1, title: t("request.business"), desc: t("request.business") },
@@ -76,7 +91,9 @@ export default function RequestPage() {
         >
           <ArrowLeft className="w-5 h-5 text-text-secondary" />
         </button>
-        <h1 className="text-base font-semibold text-text-primary">{t("request.title")}</h1>
+        <h1 className="text-base font-semibold text-text-primary">
+          {appName ? `${t("request.title")}: ${appName}` : t("request.title")}
+        </h1>
       </div>
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
