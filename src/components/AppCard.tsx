@@ -41,10 +41,21 @@ export function AppCard({ app, index = 0, variant = "default", className }: AppC
           )}
         >
           <div className="aspect-[16/10] relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/5" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-6xl font-bold text-primary/20">{app.name.charAt(0)}</span>
-            </div>
+            <img
+              src={app.thumbnail}
+              alt={app.name}
+              className="absolute inset-0 w-full h-full object-cover object-top"
+              loading="lazy"
+              onError={(e) => {
+                // Fallback to placeholder gradient if thumbnail fails to load
+                const target = e.currentTarget;
+                target.style.display = 'none';
+                const parent = target.parentElement;
+                if (parent) {
+                  parent.innerHTML = `<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/5 flex items-center justify-center"><span class="text-6xl font-bold text-primary/20">${app.name.charAt(0)}</span></div>`;
+                }
+              }}
+            />
           </div>
           <div className="p-5">
             <div className="flex items-start justify-between gap-3">
@@ -122,8 +133,21 @@ export function AppCard({ app, index = 0, variant = "default", className }: AppC
           className
         )}
       >
-        <div className="aspect-[4/3] relative bg-surface-secondary flex items-center justify-center">
-          <span className="text-4xl font-bold text-primary/15">{app.name.charAt(0)}</span>
+        <div className="aspect-[4/3] relative bg-surface-secondary overflow-hidden">
+          <img
+            src={app.thumbnail}
+            alt={app.name}
+            className="absolute inset-0 w-full h-full object-cover object-top"
+            loading="lazy"
+            onError={(e) => {
+              const target = e.currentTarget;
+              target.style.display = 'none';
+              const parent = target.parentElement;
+              if (parent) {
+                parent.innerHTML = `<div class="absolute inset-0 bg-surface-secondary flex items-center justify-center"><span class="text-4xl font-bold text-primary/15">${app.name.charAt(0)}</span></div>`;
+              }
+            }}
+          />
         </div>
         <div className="p-4">
           <h3 className="text-sm font-semibold text-text-primary truncate">{app.name}</h3>
