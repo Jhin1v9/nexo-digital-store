@@ -1,0 +1,142 @@
+{
+  "_schema": {
+    "description": "Configuracao de crop/posicao das thumbnails da NEXO Store",
+    "priority": "bySlug > byType > default",
+    "fields": {
+      "v_align": "top | center | bottom (onde a imagem e ancora verticalmente no crop)",
+      "h_align": "left | center | right",
+      "zoom": "fator de escala, ex: 1.0 = original, 1.2 = 20% zoom in, 0.8 = zoom out",
+      "offset_y_percent": "deslocamento extra vertical apos o alinhamento (-50 a +50)",
+      "offset_x_percent": "deslocamento extra horizontal apos o alinhamento (-50 a +50)",
+      "source": "pdf | local | vercel | placeholder (apenas documentacao)"
+    }
+  },
+  "default": {
+    "v_align": "top",
+    "h_align": "center",
+    "zoom": 1.0,
+    "offset_y_percent": 0,
+    "offset_x_percent": 0
+  },
+  "byType": {
+    "tpv": {
+      "v_align": "top",
+      "zoom": 1.05
+    },
+    "saas": {
+      "v_align": "top",
+      "zoom": 1.0
+    },
+    "sistema": {
+      "v_align": "top",
+      "zoom": 1.0
+    },
+    "crm": {
+      "v_align": "top",
+      "zoom": 1.0
+    },
+    "erp": {
+      "v_align": "top",
+      "zoom": 1.0
+    },
+    "site": {
+      "v_align": "top",
+      "zoom": 1.0
+    },
+    "app": {
+      "v_align": "center",
+      "zoom": 1.0
+    }
+  },
+  "bySlug": {
+    "tpv-sorveteria": {
+      "v_align": "top",
+      "zoom": 1.0,
+      "offset_y_percent": -25,
+      "note": "Landing page longa: sobe para mostrar o nome/hero do app, nao a parte de baixo"
+    },
+    "tpv-zapateria": {
+      "v_align": "top",
+      "offset_y_percent": -35,
+      "note": "Sobe bastante para mostrar hero, evita formularios da parte inferior"
+    },
+    "tpv-panaderia": {
+      "v_align": "top",
+      "offset_y_percent": -10
+    },
+    "tpv-papeleria-y-libreria": {
+      "v_align": "top",
+      "offset_y_percent": -10
+    },
+    "nexo-dashboard-pro": {
+      "v_align": "top",
+      "zoom": 1.05,
+      "offset_y_percent": -5
+    },
+    "luna-kernel": {
+      "v_align": "center",
+      "h_align": "center",
+      "zoom": 1.1
+    },
+    "calculadora-react": {
+      "v_align": "center",
+      "zoom": 1.0
+    },
+    "jogo-da-velha": {
+      "v_align": "center",
+      "zoom": 1.0
+    },
+    "snake-game": {
+      "v_align": "center",
+      "zoom": 1.0
+    },
+    "tetris-luna": {
+      "v_align": "top",
+      "zoom": 1.0,
+      "offset_y_percent": 0,
+      "note": "Thumbnail ja recortada manualmente da screenshot original (topo do jogo)"
+    },
+    "campo-minado-neon": {
+      "v_align": "center",
+      "zoom": 1.0
+    },
+    "bool-sinuca-premiere": {
+      "v_align": "center",
+      "zoom": 1.0
+    },
+    "sistema-de-consultorio-medico": {
+      "v_align": "top",
+      "offset_y_percent": -55,
+      "note": "Sobe ao maximo para mostrar logo/nome, evitando 'Manual tecnico'"
+    },
+    "sistema-de-botica": {
+      "v_align": "top",
+      "offset_y_percent": -15
+    },
+    "sistema-de-encomiendas": {
+      "v_align": "bottom",
+      "note": "Landing minimalista: ancora no icone inferior"
+    },
+    "bug-detector-pro": {
+      "v_align": "top",
+      "offset_y_percent": -5,
+      "note": "Mantem o cabecalho 'BugDetector Cloud' visivel"
+    },
+    "saas-gimnasio": {
+      "v_align": "top",
+      "offset_y_percent": -5
+    },
+    "sistema-de-gimnasio": {
+      "v_align": "top",
+      "offset_y_percent": -5
+    },
+    "saas-odontologia": {
+      "v_align": "top",
+      "offset_y_percent": -5
+    },
+    "sistema-de-boutique": {
+      "v_align": "top",
+      "offset_y_percent": -10
+    }
+  }
+}
