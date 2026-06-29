@@ -1,6 +1,7 @@
 import { AppProduct, Review, ReviewReply, Category, AppType, Framework, Industry, Sense, AppStatus, Pricing } from "@/types/app";
 import { mockLPCTemplates } from "@/lib/mock-templates";
 import { adaptLPCTemplates } from "@/lib/template-adapter";
+import { getApps as getDataApps } from "@/lib/apps-data";
 
 const developer = "NEXO Digital S.L.";
 
@@ -1151,16 +1152,7 @@ const driveApps: AppProduct[] = [
 // ===== LP Creator templates (unified as AppProduct) =====
 const mockTemplateProducts: AppProduct[] = adaptLPCTemplates(mockLPCTemplates);
 
-export const mockApps: AppProduct[] = [
-  ...tpvs,
-  ...saasApps,
-  ...sites,
-  ...apps,
-  ...programs,
-  ...custom,
-  ...driveApps,
-  ...mockTemplateProducts,
-];
+export const mockApps: AppProduct[] = getDataApps();
 
 const lpCategories = new Set([
   "business",

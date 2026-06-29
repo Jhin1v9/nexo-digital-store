@@ -1,0 +1,5569 @@
+[
+  {
+    "id": "tpv-001",
+    "slug": "tpv-sorveteria",
+    "name": "TPV Sorveteria Sabadell Nord",
+    "subtitle": "Pack completo para sorveterias",
+    "description": "Sistema completo para sorveterias artesanais. Inclui 4 apps: Cliente PWA para pedir pelo celular, Kiosk de autoatendimento na mesa, KDS (Cozinha) com fila de pedidos em tempo real e Admin Dashboard para gestão, estoque e analytics. 58 produtos no cardápio, 15 sabores artesanais com fotos reais, sincronização via Supabase Realtime ou fallback local.",
+    "shortDescription": "Pack TPV: Cliente, Kiosk, Cozinha KDS e Admin para sorveterias.",
+    "icon": "/icons/tpv-sorveteria.svg",
+    "thumbnail": "/thumbnails/tpv-sorveteria.jpg",
+    "screenshots": [
+      "/screenshots/tpv-sorveteria-1.jpg",
+      "/screenshots/tpv-sorveteria-2.jpg",
+      "/screenshots/tpv-sorveteria-3.jpg"
+    ],
+    "type": "tpv",
+    "framework": "react",
+    "industry": "food",
+    "sense": "sorveteria",
+    "status": "available",
+    "version": "4.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://tpv-sorveteria-demo.vercel.app",
+    "repoUrl": "https://github.com/Jhin1v9/TPV-SORVETERIA-DEMO",
+    "requestUrl": "/request?app=tpv-sorveteria",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.9,
+    "reviewCount": 100,
+    "downloadCount": 1250,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "Supabase",
+      "Framer Motion"
+    ],
+    "features": [
+      "Cliente PWA para pedidos pelo celular",
+      "Kiosk touch de autoatendimento na mesa",
+      "KDS Cozinha com fila em tempo real",
+      "Admin Dashboard com gestão e analytics",
+      "58 produtos e 15 sabores artesanais",
+      "Sincronização Supabase Realtime",
+      "Modo standalone com localStorage",
+      "Multi-idioma: ES, CA, PT, EN",
+      "PWA instalável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Touchscreen para Kiosk",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Sorveteria Sabadell Nord — Pack completo para sorveterias | NEXO Digital Store",
+    "metaDescription": "Sistema completo para sorveterias artesanais. Inclui 4 apps: Cliente PWA para pedir pelo celular, Kiosk de autoatendimento na mesa, KDS (Cozinha) com fila de pe",
+    "keywords": [
+      "TPV Sorveteria Sabadell Nord",
+      "Pack completo para sorveterias",
+      "tpv",
+      "food",
+      "sorveteria",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv",
+      "sorveteria",
+      "gelataria",
+      "ice cream",
+      "kiosk",
+      "autoatendimento",
+      "kds",
+      "cozinha",
+      "cliente",
+      "admin",
+      "pwa",
+      "supabase",
+      "pedidos",
+      "cardapio",
+      "sabores",
+      "food",
+      "restaurante",
+      "varejo",
+      "touch",
+      "caixa",
+      "vendas"
+    ]
+  },
+  {
+    "id": "saas-001",
+    "slug": "nexo-dashboard-pro",
+    "name": "NEXO Dashboard Pro",
+    "subtitle": "Dashboard operacional da NEXO",
+    "description": "Dashboard profissional para gestão de clientes, projetos, tarefas, mensagens WhatsApp, repositórios GitHub e deploys Vercel. Ideal para agências e equipes técnicas que precisam de visão centralizada dos projetos.",
+    "shortDescription": "Gestão de clientes, projetos, tarefas, WhatsApp, GitHub e Vercel.",
+    "icon": "/icons/nexo-dashboard-pro.svg",
+    "thumbnail": "/thumbnails/nexo-dashboard-pro.jpg",
+    "screenshots": [
+      "/screenshots/nexo-dashboard-pro-1.jpg",
+      "/screenshots/nexo-dashboard-pro-2.jpg",
+      "/screenshots/nexo-dashboard-pro-3.jpg"
+    ],
+    "type": "saas",
+    "framework": "react",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "2.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://nexodashboard.onrender.com/dashboard",
+    "repoUrl": "https://github.com/Jhin1v9/NexoDashboard",
+    "requestUrl": "/request?app=nexo-dashboard-pro",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.7,
+    "reviewCount": 71,
+    "downloadCount": 890,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "React 18",
+      "Vite",
+      "Tailwind",
+      "Express",
+      "WebSocket",
+      "Recharts"
+    ],
+    "features": [
+      "Gestão de clientes",
+      "Projetos e health score",
+      "Tarefas com auto-save",
+      "WhatsApp Production",
+      "Integração GitHub",
+      "Deploys Vercel",
+      "Analytics e relatórios",
+      "Multi-usuário"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "NEXO Dashboard Pro — Dashboard operacional da NEXO | NEXO Digital Store",
+    "metaDescription": "Dashboard profissional para gestão de clientes, projetos, tarefas, mensagens WhatsApp, repositórios GitHub e deploys Vercel. Ideal para agências e equipes técni",
+    "keywords": [
+      "NEXO Dashboard Pro",
+      "Dashboard operacional da NEXO",
+      "saas",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "dashboard",
+      "crm",
+      "gestao",
+      "projetos",
+      "tarefas",
+      "whatsapp",
+      "github",
+      "vercel",
+      "clientes",
+      "equipe",
+      "analytics",
+      "saas",
+      "admin",
+      "produtividade",
+      "agencia",
+      "dev",
+      "deploy",
+      "health score"
+    ]
+  },
+  {
+    "id": "saas-002",
+    "slug": "bug-detector-pro",
+    "name": "BugDetector Pro",
+    "subtitle": "Bug reporting com IA para devs",
+    "description": "Ferramenta de bug reporting focada em desenvolvedores. Captura, organiza e prioriza bugs com auxílio de IA, integrando-se ao fluxo de desenvolvimento.",
+    "shortDescription": "Bug reporting inteligente para equipes de desenvolvimento.",
+    "icon": "/icons/bug-detector-pro.svg",
+    "thumbnail": "/thumbnails/bug-detector-pro.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "react",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://github.com/Jhin1v9/bug-detector-pro",
+    "repoUrl": "https://github.com/Jhin1v9/bug-detector-pro",
+    "requestUrl": "/request?app=bug-detector-pro",
+    "pricing": "subscription",
+    "price": 29,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 27,
+    "downloadCount": 340,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "TypeScript",
+      "React",
+      "Node.js"
+    ],
+    "features": [
+      "Captura de bugs",
+      "Priorização com IA",
+      "Integração dev-first",
+      "Relatórios detalhados",
+      "Colaboração em equipe",
+      "Dashboard de issues"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "BugDetector Pro — Bug reporting com IA para devs | NEXO Digital Store",
+    "metaDescription": "Ferramenta de bug reporting focada em desenvolvedores. Captura, organiza e prioriza bugs com auxílio de IA, integrando-se ao fluxo de desenvolvimento.",
+    "keywords": [
+      "BugDetector Pro",
+      "Bug reporting com IA para devs",
+      "saas",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "bug",
+      "debug",
+      "issue",
+      "github",
+      "ia",
+      "relatorio",
+      "desenvolvedor",
+      "dev",
+      "qa",
+      "qualidade",
+      "tracker",
+      "priorizacao",
+      "colaboracao",
+      "software"
+    ]
+  },
+  {
+    "id": "saas-003",
+    "slug": "nexo-billing",
+    "name": "Nexo Billing",
+    "subtitle": "Faturação inteligente para autónomos e PYMES",
+    "description": "SaaS de faturação inteligente para autónomos e PYMES espanholas. Cria faturas em segundos com QR Verifactu, controla tesouraria, calcula impostos (Modelo 303 e 130) e apresenta declarações à AEAT sem stress. Inclui link público PWA para clientes, gestor de equipa com roles e exportação ZIP para a assessoria.",
+    "shortDescription": "Faturação inteligente com Verifactu AEAT para autónomos e PYMES.",
+    "icon": "/icons/nexo-billing.svg",
+    "thumbnail": "/thumbnails/nexo-billing.jpg",
+    "screenshots": [
+      "/screenshots/nexo-billing-1.jpg",
+      "/screenshots/nexo-billing-2.jpg",
+      "/screenshots/nexo-billing-3.jpg"
+    ],
+    "type": "saas",
+    "framework": "react",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://billing.nexo-digital.app/",
+    "requestUrl": "/request?app=nexo-billing",
+    "pricing": "subscription",
+    "price": 39,
+    "currency": "EUR",
+    "rating": 4.8,
+    "reviewCount": 49,
+    "downloadCount": 620,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js"
+    ],
+    "features": [
+      "Faturas em segundos com QR Verifactu",
+      "Envio direto à AEAT",
+      "Tesouraria e cobranças pendentes",
+      "Cálculo automático Modelo 303 e 130",
+      "Link público PWA para clientes",
+      "Gestor de equipa com roles",
+      "Exportação ZIP para assessoria",
+      "Pague por SEPA via GoCardless",
+      "7 dias de teste grátis"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet",
+      "Dados fiscais Espanha"
+    ],
+    "metaTitle": "Nexo Billing — Faturação inteligente para autónomos e PYMES | NEXO Digital Store",
+    "metaDescription": "SaaS de faturação inteligente para autónomos e PYMES espanholas. Cria faturas em segundos com QR Verifactu, controla tesouraria, calcula impostos (Modelo 303 e ",
+    "keywords": [
+      "Nexo Billing",
+      "Faturação inteligente para autónomos e PYMES",
+      "saas",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "billing",
+      "faturacao",
+      "faturas",
+      "verifactu",
+      "aeat",
+      "impostos",
+      "modelo 303",
+      "modelo 130",
+      "autonomo",
+      "pyme",
+      "tesouraria",
+      "cobranca",
+      "sepa",
+      "gocardless",
+      "qr",
+      "espanha",
+      "contabilidade",
+      "contador",
+      "zip"
+    ]
+  },
+  {
+    "id": "site-001",
+    "slug": "nexo-digital",
+    "name": "NEXO Digital",
+    "subtitle": "Site institucional da NEXO",
+    "description": "Site oficial da NEXO DIGITAL S.L. Apresenta a marca, serviços, produtos e portfólio da empresa. Ponto de entrada para clientes conhecerem o ecossistema NEXO.",
+    "shortDescription": "Site institucional da NEXO Digital.",
+    "icon": "/icons/nexo-digital.svg",
+    "thumbnail": "/thumbnails/nexo-digital.jpg",
+    "screenshots": [
+      "/screenshots/nexo-digital-1.jpg",
+      "/screenshots/nexo-digital-2.jpg",
+      "/screenshots/nexo-digital-3.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "3.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://www.nexo-digital.app/pt",
+    "repoUrl": "https://github.com/Jhin1v9/nexo-digital",
+    "requestUrl": "/request?app=nexo-digital",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.8,
+    "reviewCount": 256,
+    "downloadCount": 3200,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Site institucional",
+      "Apresentação de serviços",
+      "Portfólio",
+      "SEO otimizado",
+      "Design responsivo",
+      "Multi-idioma"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Domínio próprio"
+    ],
+    "metaTitle": "NEXO Digital — Site institucional da NEXO | NEXO Digital Store",
+    "metaDescription": "Site oficial da NEXO DIGITAL S.L. Apresenta a marca, serviços, produtos e portfólio da empresa. Ponto de entrada para clientes conhecerem o ecossistema NEXO.",
+    "keywords": [
+      "NEXO Digital",
+      "Site institucional da NEXO",
+      "site",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "site",
+      "institucional",
+      "portfolio",
+      "agencia",
+      "desenvolvimento web",
+      "software",
+      "nextjs",
+      "react",
+      "tailwind",
+      "seo",
+      "multilingue",
+      "nexo",
+      "digital",
+      "portugal",
+      "espanha",
+      "brasil",
+      "landing page"
+    ]
+  },
+  {
+    "id": "site-002",
+    "slug": "santafe-construcciones",
+    "name": "Construcciones Santa Fe",
+    "subtitle": "Site para empresas de construção",
+    "description": "Tema WordPress profissional para empresas de construção e reformas. Inclui galeria de obras, formulário de contato, blog, seções de serviços e depoimentos. Template ideal para construtoras, arquitetos e empresas de obras.",
+    "shortDescription": "Site WordPress para construtoras e empresas de obras.",
+    "icon": "/icons/santafe-construcciones.svg",
+    "thumbnail": "/thumbnails/santafe-construcciones.jpg",
+    "screenshots": [
+      "/screenshots/santafe-construcciones-1.jpg",
+      "/screenshots/santafe-construcciones-2.jpg",
+      "/screenshots/santafe-construcciones-3.jpg"
+    ],
+    "type": "site",
+    "framework": "php",
+    "industry": "construction",
+    "sense": "outro",
+    "status": "available",
+    "version": "2.1.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://santafe.nexo-digital.app/",
+    "repoUrl": "https://github.com/Jhin1v9/santafe-wordpress-theme",
+    "requestUrl": "/request?app=santafe-construcciones",
+    "pricing": "fixed",
+    "price": 399,
+    "currency": "EUR",
+    "rating": 4.6,
+    "reviewCount": 43,
+    "downloadCount": 540,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "PHP 8.3",
+      "WordPress",
+      "Tailwind CSS v4",
+      "Vanilla JS"
+    ],
+    "features": [
+      "Galeria de obras",
+      "Formulário de contato",
+      "Blog integrado",
+      "Seção de serviços",
+      "Depoimentos",
+      "SEO local",
+      "i18n ES/CA",
+      "Imagens reais das obras"
+    ],
+    "requirements": [
+      "WordPress 6+",
+      "PHP 8.3+",
+      "Hospedagem compatível"
+    ],
+    "metaTitle": "Construcciones Santa Fe — Site para empresas de construção | NEXO Digital Store",
+    "metaDescription": "Tema WordPress profissional para empresas de construção e reformas. Inclui galeria de obras, formulário de contato, blog, seções de serviços e depoimentos. Temp",
+    "keywords": [
+      "Construcciones Santa Fe",
+      "Site para empresas de construção",
+      "site",
+      "construction",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "construcao",
+      "reformas",
+      "obra",
+      "wordpress",
+      "php",
+      "site",
+      "template",
+      "galeria",
+      "formulario",
+      "blog",
+      "seo local",
+      "construtora",
+      "arquiteto",
+      "barcelona",
+      "empresa de obras"
+    ]
+  },
+  {
+    "id": "site-003",
+    "slug": "onadance",
+    "name": "Onadance",
+    "subtitle": "Loja de sportswear artesanal em Barcelona",
+    "description": "Loja de sportswear e moda de dança artesanal, feita em Barcelona com tecido ECONYL® 100% regenerado. Peças limitadas, sem sobreprodução, com certificações OCS, GRS e OEKO-TEX®. Inclui carrinho, checkout, envios gratuitos para Barcelona e Europa em compras acima de 150€.",
+    "shortDescription": "Sportswear sustentável feito à mão em Barcelona com ECONYL® regenerado.",
+    "icon": "/icons/onadance.svg",
+    "thumbnail": "/thumbnails/onadance.jpg",
+    "screenshots": [
+      "/screenshots/onadance-1.jpg",
+      "/screenshots/onadance-2.jpg",
+      "/screenshots/onadance-3.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "outro",
+    "status": "available",
+    "version": "2.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://onadance.com/",
+    "requestUrl": "/request?app=onadance",
+    "pricing": "fixed",
+    "price": 499,
+    "currency": "EUR",
+    "rating": 4.7,
+    "reviewCount": 34,
+    "downloadCount": 430,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Shopify"
+    ],
+    "features": [
+      "Loja online completa",
+      "Tecido ECONYL® regenerado",
+      "Feito à mão em Barcelona",
+      "Séries limitadas",
+      "Carrinho e checkout",
+      "Envio grátis Barcelona",
+      "Envio grátis Europa +150€",
+      "Devoluções em 14 dias",
+      "Certificações OCS/GRS/OEKO-TEX"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Domínio próprio",
+      "Gateway de pagamento"
+    ],
+    "metaTitle": "Onadance — Loja de sportswear artesanal em Barcelona | NEXO Digital Store",
+    "metaDescription": "Loja de sportswear e moda de dança artesanal, feita em Barcelona com tecido ECONYL® 100% regenerado. Peças limitadas, sem sobreprodução, com certificações OCS, ",
+    "keywords": [
+      "Onadance",
+      "Loja de sportswear artesanal em Barcelona",
+      "site",
+      "retail",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "loja",
+      "ecommerce",
+      "shopify",
+      "moda",
+      "danca",
+      "sportswear",
+      "sustentavel",
+      "econyl",
+      "barcelona",
+      "roupa",
+      "fitness",
+      "yoga",
+      "ballet",
+      "series limitadas",
+      "envio gratis",
+      "checkout",
+      "carrinho"
+    ]
+  },
+  {
+    "id": "site-004",
+    "slug": "ana-paula-beauty-studio",
+    "name": "Ana Paula Beauty Studio",
+    "subtitle": "Site para estúdio de beleza",
+    "description": "Site elegante para estúdio de beleza especializado em manicure, pedicure e design de sobrancelhas. Inclui apresentação de serviços com preços e duração, portfólio de trabalhos, agendamento, depoimentos e estatísticas de confiança. Design premium e responsivo.",
+    "shortDescription": "Site premium para estúdio de manicure, pedicure e sobrancelhas.",
+    "icon": "/icons/ana-paula-beauty-studio.svg",
+    "thumbnail": "/thumbnails/ana-paula-beauty-studio.jpg",
+    "screenshots": [
+      "/screenshots/ana-paula-beauty-studio-1.jpg",
+      "/screenshots/ana-paula-beauty-studio-2.jpg",
+      "/screenshots/ana-paula-beauty-studio-3.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.5.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://anapaula-beauty-studio.vercel.app/",
+    "requestUrl": "/request?app=ana-paula-beauty-studio",
+    "pricing": "fixed",
+    "price": 349,
+    "currency": "EUR",
+    "rating": 4.9,
+    "reviewCount": 22,
+    "downloadCount": 280,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "features": [
+      "Apresentação premium",
+      "Serviços com preços",
+      "Portfólio de trabalhos",
+      "Agendamento",
+      "Depoimentos",
+      "Estatísticas de confiança",
+      "Design responsivo",
+      "Animações suaves"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Domínio próprio"
+    ],
+    "metaTitle": "Ana Paula Beauty Studio — Site para estúdio de beleza | NEXO Digital Store",
+    "metaDescription": "Site elegante para estúdio de beleza especializado em manicure, pedicure e design de sobrancelhas. Inclui apresentação de serviços com preços e duração, portfól",
+    "keywords": [
+      "Ana Paula Beauty Studio",
+      "Site para estúdio de beleza",
+      "site",
+      "health",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "beleza",
+      "estetica",
+      "manicure",
+      "pedicure",
+      "sobrancelha",
+      "nail art",
+      "salao",
+      "studio",
+      "agendamento",
+      "portfolio",
+      "depoimentos",
+      "template",
+      "site",
+      "premium",
+      "responsive"
+    ]
+  },
+  {
+    "id": "app-001",
+    "slug": "bool-sinuca-premiere",
+    "name": "Bool Sinuca Premiere",
+    "subtitle": "Jogo de sinuca 8-ball PWA mobile first",
+    "description": "Jogo de sinuca 8-ball online, PWA mobile first. Entre na mesa com um toque, sem cadastro obrigatório. Controle de tacada, física realista, multiplayer e login social com Google. Ideal para bares, salões de jogos e entretenimento mobile.",
+    "shortDescription": "Jogue sinuca 8-ball online no seu celular, sem cadastro.",
+    "icon": "/icons/bool-sinuca-premiere.svg",
+    "thumbnail": "/thumbnails/bool-sinuca-premiere.jpg",
+    "screenshots": [
+      "/screenshots/bool-sinuca-premiere-1.jpg",
+      "/screenshots/bool-sinuca-premiere-2.jpg",
+      "/screenshots/bool-sinuca-premiere-3.jpg"
+    ],
+    "type": "app",
+    "framework": "react",
+    "industry": "entertainment",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://8bollpool.com/pt",
+    "requestUrl": "/request?app=bool-sinuca-premiere",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.6,
+    "reviewCount": 168,
+    "downloadCount": 2100,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "PWA",
+      "Firebase",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Jogo 8-ball online",
+      "PWA mobile first",
+      "Sem cadastro obrigatório",
+      "Login com Google",
+      "Física realista",
+      "Multiplayer",
+      "Design dark imersivo"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "iOS/Android",
+      "Conexão internet"
+    ],
+    "metaTitle": "Bool Sinuca Premiere — Jogo de sinuca 8-ball PWA mobile first | NEXO Digital Store",
+    "metaDescription": "Jogo de sinuca 8-ball online, PWA mobile first. Entre na mesa com um toque, sem cadastro obrigatório. Controle de tacada, física realista, multiplayer e login s",
+    "keywords": [
+      "Bool Sinuca Premiere",
+      "Jogo de sinuca 8-ball PWA mobile first",
+      "app",
+      "entertainment",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "jogo",
+      "game",
+      "sinuca",
+      "bilhar",
+      "pool",
+      "8-ball",
+      "pwa",
+      "mobile",
+      "multiplayer",
+      "google login",
+      "entretenimento",
+      "bar",
+      "salao de jogos",
+      "esporte",
+      "tacada"
+    ]
+  },
+  {
+    "id": "app-002",
+    "slug": "campo-minado-neon",
+    "name": "Campo Minado Neon",
+    "subtitle": "Jogo clássico de campo minado em neon",
+    "description": "Campo minado com visual neon e vibe cyberpunk. Múltiplas dificuldades, cronômetro, animações GSAP e efeitos sonoros. Jogue direto no navegador, sem instalação.",
+    "shortDescription": "Campo minado neon com dificuldades, timer e efeitos especiais.",
+    "icon": "/icons/campo-minado-neon.svg",
+    "thumbnail": "/thumbnails/campo-minado-neon.jpg",
+    "screenshots": [
+      "/screenshots/campo-minado-neon-1.jpg",
+      "/screenshots/campo-minado-neon-2.jpg",
+      "/screenshots/campo-minado-neon-3.jpg"
+    ],
+    "type": "app",
+    "framework": "other",
+    "industry": "entertainment",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://github.com/Jhin1v9/luna-minesweeper",
+    "repoUrl": "https://github.com/Jhin1v9/luna-minesweeper",
+    "requestUrl": "/request?app=campo-minado-neon",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 68,
+    "downloadCount": 850,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "GSAP",
+      "Vite"
+    ],
+    "features": [
+      "Visual neon cyberpunk",
+      "Dificuldades fáceis, médias e difíceis",
+      "Cronômetro e contador de bandeiras",
+      "Animações GSAP",
+      "Efeitos sonoros",
+      "Sem instalação"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Desktop e mobile"
+    ],
+    "metaTitle": "Campo Minado Neon — Jogo clássico de campo minado em neon | NEXO Digital Store",
+    "metaDescription": "Campo minado com visual neon e vibe cyberpunk. Múltiplas dificuldades, cronômetro, animações GSAP e efeitos sonoros. Jogue direto no navegador, sem instalação.",
+    "keywords": [
+      "Campo Minado Neon",
+      "Jogo clássico de campo minado em neon",
+      "app",
+      "entertainment",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "jogo",
+      "game",
+      "campo minado",
+      "minesweeper",
+      "neon",
+      "retro",
+      "logica",
+      "quebra-cabeca",
+      "bombas",
+      "dificuldade",
+      "timer",
+      "arcade",
+      "html5"
+    ]
+  },
+  {
+    "id": "app-003",
+    "slug": "jogo-da-velha",
+    "name": "Jogo da Velha",
+    "subtitle": "Clássico jogo da velha em React",
+    "description": "Jogo da velha moderno feito em React com design limpo, placar de vitórias, empates e derrotas, e modo para dois jogadores. Ideal para demonstrar interatividade e estado em React.",
+    "shortDescription": "Jogo da velha moderno com placar e design clean.",
+    "icon": "/icons/jogo-da-velha.svg",
+    "thumbnail": "/thumbnails/jogo-da-velha.jpg",
+    "screenshots": [
+      "/screenshots/jogo-da-velha-1.jpg",
+      "/screenshots/jogo-da-velha-2.jpg",
+      "/screenshots/jogo-da-velha-3.jpg"
+    ],
+    "type": "app",
+    "framework": "react",
+    "industry": "entertainment",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://github.com/Jhin1v9/jogo-da-velha",
+    "repoUrl": "https://github.com/Jhin1v9/jogo-da-velha",
+    "requestUrl": "/request?app=jogo-da-velha",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.3,
+    "reviewCount": 49,
+    "downloadCount": 620,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "React",
+      "Vite",
+      "CSS3"
+    ],
+    "features": [
+      "Modo 2 jogadores",
+      "Placar de vitórias/empates/derrotas",
+      "Design minimalista",
+      "Animações suaves",
+      "Reinício rápido"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Desktop e mobile"
+    ],
+    "metaTitle": "Jogo da Velha — Clássico jogo da velha em React | NEXO Digital Store",
+    "metaDescription": "Jogo da velha moderno feito em React com design limpo, placar de vitórias, empates e derrotas, e modo para dois jogadores. Ideal para demonstrar interatividade ",
+    "keywords": [
+      "Jogo da Velha",
+      "Clássico jogo da velha em React",
+      "app",
+      "entertainment",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "jogo",
+      "game",
+      "velha",
+      "tic-tac-toe",
+      "classico",
+      "placar",
+      "dois jogadores",
+      "react",
+      "vite",
+      "casual",
+      "passatempo"
+    ]
+  },
+  {
+    "id": "app-004",
+    "slug": "snake-game",
+    "name": "Snake Game",
+    "subtitle": "Jogo da cobrinha arcade",
+    "description": "Clássico jogo da cobrinha com estética arcade neon. Controle a cobra, coma a comida, aumente o nível e bata seu high score. Totalmente responsivo e jogável no mobile.",
+    "shortDescription": "Jogo da cobrinha arcade com níveis, high score e visual neon.",
+    "icon": "/icons/snake-game.svg",
+    "thumbnail": "/thumbnails/snake-game.jpg",
+    "screenshots": [
+      "/screenshots/snake-game-1.jpg",
+      "/screenshots/snake-game-2.jpg",
+      "/screenshots/snake-game-3.jpg"
+    ],
+    "type": "app",
+    "framework": "other",
+    "industry": "entertainment",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://github.com/Jhin1v9/snake-game",
+    "repoUrl": "https://github.com/Jhin1v9/snake-game",
+    "requestUrl": "/request?app=snake-game",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.4,
+    "reviewCount": 62,
+    "downloadCount": 780,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "HTML5 Canvas",
+      "JavaScript",
+      "CSS3"
+    ],
+    "features": [
+      "Estética arcade neon",
+      "Níveis de dificuldade",
+      "High score persistente",
+      "Controles por teclado e touch",
+      "Responsivo"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Desktop e mobile"
+    ],
+    "metaTitle": "Snake Game — Jogo da cobrinha arcade | NEXO Digital Store",
+    "metaDescription": "Clássico jogo da cobrinha com estética arcade neon. Controle a cobra, coma a comida, aumente o nível e bata seu high score. Totalmente responsivo e jogável no m",
+    "keywords": [
+      "Snake Game",
+      "Jogo da cobrinha arcade",
+      "app",
+      "entertainment",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "jogo",
+      "game",
+      "snake",
+      "cobrinha",
+      "arcade",
+      "neon",
+      "high score",
+      "nivel",
+      "canvas",
+      "touch",
+      "teclado",
+      "casual"
+    ]
+  },
+  {
+    "id": "app-005",
+    "slug": "tetris-luna",
+    "name": "Tetris Luna",
+    "subtitle": "Tetris clássico construído pela Luna",
+    "description": "Tetris clássico com painel lateral de pontuação, nível, próxima peça e controles. Design clean, controles de teclado e reinício rápido. Ótimo exemplo de lógica de jogo e canvas.",
+    "shortDescription": "Tetris clássico com pontuação, níveis e próxima peça.",
+    "icon": "/icons/tetris-luna.svg",
+    "thumbnail": "/thumbnails/tetris-luna.jpg",
+    "screenshots": [
+      "/screenshots/tetris-luna-1.jpg",
+      "/screenshots/tetris-luna-2.jpg",
+      "/screenshots/tetris-luna-3.jpg"
+    ],
+    "type": "app",
+    "framework": "other",
+    "industry": "entertainment",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://github.com/Jhin1v9/tetris-game",
+    "repoUrl": "https://github.com/Jhin1v9/tetris-game",
+    "requestUrl": "/request?app=tetris-luna",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 43,
+    "downloadCount": 540,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "HTML5 Canvas",
+      "JavaScript",
+      "CSS3"
+    ],
+    "features": [
+      "Jogo Tetris completo",
+      "Painel de pontuação e nível",
+      "Próxima peça",
+      "Controles de teclado",
+      "Reinício rápido"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Desktop e mobile"
+    ],
+    "metaTitle": "Tetris Luna — Tetris clássico construído pela Luna | NEXO Digital Store",
+    "metaDescription": "Tetris clássico com painel lateral de pontuação, nível, próxima peça e controles. Design clean, controles de teclado e reinício rápido. Ótimo exemplo de lógica ",
+    "keywords": [
+      "Tetris Luna",
+      "Tetris clássico construído pela Luna",
+      "app",
+      "entertainment",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "jogo",
+      "game",
+      "tetris",
+      "blocos",
+      "puzzle",
+      "arcade",
+      "pontuacao",
+      "nivel",
+      "linhas",
+      "canvas",
+      "classico",
+      "casual"
+    ]
+  },
+  {
+    "id": "app-006",
+    "slug": "calculadora-react",
+    "name": "Calculadora React",
+    "subtitle": "Calculadora moderna em React + Vite",
+    "description": "Calculadora funcional desenvolvida em React com Vite. Operações básicas, histórico da expressão, design dark e responsivo. Perfeita como exemplo de componente interativo e estado.",
+    "shortDescription": "Calculadora moderna com operações básicas e design responsivo.",
+    "icon": "/icons/calculadora-react.svg",
+    "thumbnail": "/thumbnails/calculadora-react.jpg",
+    "screenshots": [
+      "/screenshots/calculadora-react-1.jpg",
+      "/screenshots/calculadora-react-2.jpg",
+      "/screenshots/calculadora-react-3.jpg"
+    ],
+    "type": "app",
+    "framework": "react",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://github.com/Jhin1v9/calculadora-react-vite",
+    "repoUrl": "https://github.com/Jhin1v9/calculadora-react-vite",
+    "requestUrl": "/request?app=calculadora-react",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.2,
+    "reviewCount": 32,
+    "downloadCount": 410,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "React",
+      "Vite",
+      "CSS3"
+    ],
+    "features": [
+      "Operações básicas",
+      "Histórico da expressão",
+      "Design dark",
+      "Responsivo",
+      "Teclado virtual"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Desktop e mobile"
+    ],
+    "metaTitle": "Calculadora React — Calculadora moderna em React + Vite | NEXO Digital Store",
+    "metaDescription": "Calculadora funcional desenvolvida em React com Vite. Operações básicas, histórico da expressão, design dark e responsivo. Perfeita como exemplo de componente i",
+    "keywords": [
+      "Calculadora React",
+      "Calculadora moderna em React + Vite",
+      "app",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "calculadora",
+      "calculo",
+      "matematica",
+      "soma",
+      "subtracao",
+      "multiplicacao",
+      "divisao",
+      "react",
+      "vite",
+      "utilitario",
+      "componente",
+      "estado"
+    ]
+  },
+  {
+    "id": "prog-001",
+    "slug": "luna-kernel",
+    "name": "Luna Kernel",
+    "subtitle": "Assistente autônomo NEXO",
+    "description": "Kernel de agente autônomo para a NEXO DIGITAL. Funciona como assistente próprio do Dashboard Pro, mas pode operar de forma standalone. Gerencia tarefas, orquestra subagentes e mantém a memória operacional dos projetos.",
+    "shortDescription": "Assistente autônomo para o Dashboard Pro ou uso standalone.",
+    "icon": "/icons/luna-kernel.svg",
+    "thumbnail": "/thumbnails/luna-kernel.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "program",
+    "framework": "node",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "4.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "https://github.com/Jhin1v9/luna-kernel",
+    "repoUrl": "https://github.com/Jhin1v9/luna-kernel",
+    "requestUrl": "/request?app=luna-kernel",
+    "pricing": "subscription",
+    "price": 59,
+    "currency": "EUR",
+    "rating": 4.8,
+    "reviewCount": 57,
+    "downloadCount": 720,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Node.js",
+      "JavaScript",
+      "WebSocket",
+      "PostgreSQL"
+    ],
+    "features": [
+      "Agente autônomo",
+      "Orquestração de subagentes",
+      "Memória operacional",
+      "Integração Dashboard Pro",
+      "Modo standalone",
+      "Brain persistente",
+      "Automação de tarefas"
+    ],
+    "requirements": [
+      "Node.js 18+",
+      "Servidor Linux/Windows",
+      "Conexão internet"
+    ],
+    "metaTitle": "Luna Kernel — Assistente autônomo NEXO | NEXO Digital Store",
+    "metaDescription": "Kernel de agente autônomo para a NEXO DIGITAL. Funciona como assistente próprio do Dashboard Pro, mas pode operar de forma standalone. Gerencia tarefas, orquest",
+    "keywords": [
+      "Luna Kernel",
+      "Assistente autônomo NEXO",
+      "program",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "luna",
+      "agente",
+      "ia",
+      "autonomo",
+      "kernel",
+      "subagentes",
+      "memoria",
+      "tarefas",
+      "orquestracao",
+      "dashboard",
+      "automatizacao",
+      "brain",
+      "postgres",
+      "websocket"
+    ]
+  },
+  {
+    "id": "cust-001",
+    "slug": "nexo-custom",
+    "name": "NEXO Custom",
+    "subtitle": "Software sob medida",
+    "description": "Desenvolvimento de software personalizado sob medida para sua empresa. Análise de requisitos, prototipagem, desenvolvimento, testes e suporte contínuo. Tecnologias modernas e escaláveis.",
+    "shortDescription": "Software personalizado sob medida para seu negócio.",
+    "icon": "/icons/nexo-custom.svg",
+    "thumbnail": "/thumbnails/nexo-custom.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "custom",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/nexo-custom",
+    "requestUrl": "/request?app=nexo-custom",
+    "pricing": "quote",
+    "currency": "EUR",
+    "rating": 4.9,
+    "reviewCount": 71,
+    "downloadCount": 890,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "features": [
+      "Análise de requisitos",
+      "Prototipagem",
+      "Desenvolvimento ágil",
+      "Testes automatizados",
+      "Suporte contínuo",
+      "Tecnologias modernas",
+      "Escalável",
+      "Seguro"
+    ],
+    "requirements": [
+      "Reunião de briefing",
+      "Contrato de prestação"
+    ],
+    "metaTitle": "NEXO Custom — Software sob medida | NEXO Digital Store",
+    "metaDescription": "Desenvolvimento de software personalizado sob medida para sua empresa. Análise de requisitos, prototipagem, desenvolvimento, testes e suporte contínuo. Tecnolog",
+    "keywords": [
+      "NEXO Custom",
+      "Software sob medida",
+      "custom",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "custom",
+      "sob medida",
+      "software",
+      "aplicativo",
+      "desenvolvimento",
+      "escalavel",
+      "seguro",
+      "prototipagem",
+      "testes",
+      "suporte",
+      "aws",
+      "nextjs",
+      "react",
+      "node"
+    ]
+  },
+  {
+    "id": "gd-100",
+    "slug": "gestor-documental-contable",
+    "name": "GESTOR DOCUMENTAL CONTABLE",
+    "subtitle": "Solução app para escritorio.",
+    "description": "GESTOR DOCUMENTAL CONTABLE. Gestor Documental Contable Guía técnica e instructivo de instalación y publicación en la web. Sistema de gestión de documentos contables, contabilidad, tesorería, activos, presupuestos y obligaciones tributarias.",
+    "shortDescription": "Solução app para escritorio.",
+    "icon": "/icons/gestor-documental-contable.svg",
+    "thumbnail": "/thumbnails/gestor-documental-contable.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "app",
+    "framework": "nextjs",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/gestor-documental-contable",
+    "requestUrl": "/request?app=gestor-documental-contable",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnología con la que fue desarrollado",
+      "Funcionalidades del sistema",
+      "Multiempresa: manejo de varias empresas con selector de empresa activa y filtrado de datos.",
+      "Roles y seguridad: Administrador (acceso total) y Operador (registra/edita, no elimina ni administra).",
+      "Auditoría: bitácora que registra quién crea, edita o elimina cada registro.",
+      "Moneda y tipo de cambio: conversión automática a soles según la cotización de la fecha.",
+      "Detracciones y retenciones, notas de crédito/débito y cierre contable mensual.",
+      "Pruebas automáticas: 37 pruebas que validan todos los módulos, reportes y la API."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "GESTOR DOCUMENTAL CONTABLE — Solução app para escritorio. | NEXO Digital Store",
+    "metaDescription": "GESTOR DOCUMENTAL CONTABLE. Gestor Documental Contable Guía técnica e instructivo de instalación y publicación en la web. Sistema de gestión de documentos conta",
+    "keywords": [
+      "GESTOR DOCUMENTAL CONTABLE",
+      "Solução app para escritorio.",
+      "app",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "gestor-documental-contable",
+      "app",
+      "finance",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-101",
+    "slug": "sistema-de-encomiendas",
+    "name": "SISTEMA DE ENCOMIENDAS",
+    "subtitle": "Solução app para escritorio.",
+    "description": "SISTEMA DE ENCOMIENDAS. EnviosPro Sistema de Encomiendas y Paqueteria Documentacion tecnica - Instalacion - Despliegue web",
+    "shortDescription": "Solução app para escritorio.",
+    "icon": "/icons/sistema-de-encomiendas.svg",
+    "thumbnail": "/thumbnails/sistema-de-encomiendas.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "app",
+    "framework": "nextjs",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-encomiendas",
+    "requestUrl": "/request?app=sistema-de-encomiendas",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Python",
+      "Django",
+      "MySQL"
+    ],
+    "features": [
+      "Interface moderna",
+      "Design responsivo",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE ENCOMIENDAS — Solução app para escritorio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE ENCOMIENDAS. EnviosPro Sistema de Encomiendas y Paqueteria Documentacion tecnica - Instalacion - Despliegue web",
+    "keywords": [
+      "SISTEMA DE ENCOMIENDAS",
+      "Solução app para escritorio.",
+      "app",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-encomiendas",
+      "app",
+      "finance",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-102",
+    "slug": "gestor-documental-municipal",
+    "name": "GESTOR DOCUMENTAL MUNICIPAL",
+    "subtitle": "Solução app para seu negócio.",
+    "description": "GESTOR DOCUMENTAL MUNICIPAL — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução app para seu negócio.",
+    "icon": "/icons/gestor-documental-municipal.svg",
+    "thumbnail": "/thumbnails/gestor-documental-municipal.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "app",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/gestor-documental-municipal",
+    "requestUrl": "/request?app=gestor-documental-municipal",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Interface moderna",
+      "Design responsivo",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "GESTOR DOCUMENTAL MUNICIPAL — Solução app para seu negócio. | NEXO Digital Store",
+    "metaDescription": "GESTOR DOCUMENTAL MUNICIPAL — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "GESTOR DOCUMENTAL MUNICIPAL",
+      "Solução app para seu negócio.",
+      "app",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "gestor-documental-municipal",
+      "app",
+      "other",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-103",
+    "slug": "gestion-de-almacenes",
+    "name": "GESTIÓN DE ALMACENES",
+    "subtitle": "Solução app para escritorio.",
+    "description": "GESTIÓN DE ALMACENES. AlmacénPro Sistema de Gestión de Almacenes",
+    "shortDescription": "Solução app para escritorio.",
+    "icon": "/icons/gestion-de-almacenes.svg",
+    "thumbnail": "/thumbnails/gestion-de-almacenes.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "app",
+    "framework": "nextjs",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/gestion-de-almacenes",
+    "requestUrl": "/request?app=gestion-de-almacenes",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías utilizadas",
+      "Funcionalidades del sistema",
+      "indicadores (KPIs) y 4 gráficos en tiempo real: movimientos, stock por",
+      "Instalación en una computadora nueva",
+      "Hosting web sugerido",
+      "Despliegue paso a paso en PythonAnywhere"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "GESTIÓN DE ALMACENES — Solução app para escritorio. | NEXO Digital Store",
+    "metaDescription": "GESTIÓN DE ALMACENES. AlmacénPro Sistema de Gestión de Almacenes",
+    "keywords": [
+      "GESTIÓN DE ALMACENES",
+      "Solução app para escritorio.",
+      "app",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "gestion-de-almacenes",
+      "app",
+      "finance",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-104",
+    "slug": "sistema-de-consultorio-medico",
+    "name": "SISTEMA DE CONSULTORIO MÉDICO",
+    "subtitle": "Solução app para clinica.",
+    "description": "SISTEMA DE CONSULTORIO MÉDICO. Sistema de Gestion para Consultorio Medico",
+    "shortDescription": "Solução app para clinica.",
+    "icon": "/icons/sistema-de-consultorio-medico.svg",
+    "thumbnail": "/thumbnails/sistema-de-consultorio-medico.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "app",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-consultorio-medico",
+    "requestUrl": "/request?app=sistema-de-consultorio-medico",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "features": [
+      "modulos: pacientes, citas, consultas, laboratorio,",
+      "Python 3.12",
+      "XAMPP (MySQL)",
+      "Editor de texto (opcional)",
+      "Git (opcional)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE CONSULTORIO MÉDICO — Solução app para clinica. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE CONSULTORIO MÉDICO. Sistema de Gestion para Consultorio Medico",
+    "keywords": [
+      "SISTEMA DE CONSULTORIO MÉDICO",
+      "Solução app para clinica.",
+      "app",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-consultorio-medico",
+      "app",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-105",
+    "slug": "saas-gimnasio",
+    "name": "SaaS Gimnasio",
+    "subtitle": "Solução saas para clinica.",
+    "description": "SaaS Gimnasio. GymSaaS Pro Manual del Sistema Plataforma SaaS de Gestion para Gimnasios",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/saas-gimnasio.svg",
+    "thumbnail": "/thumbnails/saas-gimnasio.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-gimnasio",
+    "requestUrl": "/request?app=saas-gimnasio",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologia utilizada",
+      "Funcionalidades del sistema",
+      "Instalacion en una computadora nueva",
+      "Hosting web recomendado",
+      "Despliegue paso a paso en Hostinger",
+      "Multi-tenant: cada gimnasio ve unicamente sus propios datos.",
+      "Registro de gimnasios con prueba gratis de 14 dias y landing con precios.",
+      "Dashboard con KPIs, MRR (ingreso recurrente) y crecimiento mensual."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Gimnasio — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "SaaS Gimnasio. GymSaaS Pro Manual del Sistema Plataforma SaaS de Gestion para Gimnasios",
+    "keywords": [
+      "SaaS Gimnasio",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-gimnasio",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-106",
+    "slug": "sistema-de-gimnasio",
+    "name": "SISTEMA DE GIMNASIO",
+    "subtitle": "Solução saas para clinica.",
+    "description": "SISTEMA DE GIMNASIO. COL_GYM-SYSTEM Manual tecnico y operativo",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/sistema-de-gimnasio.svg",
+    "thumbnail": "/thumbnails/sistema-de-gimnasio.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-gimnasio",
+    "requestUrl": "/request?app=sistema-de-gimnasio",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologia utilizada en la integracion",
+      "Funcionalidades disponibles en el sistema",
+      "Datos que debe proveer el dueno de la empresa",
+      "Configuracion y puesta en produccion paso a paso",
+      "Diagramas y referencia visual",
+      "Tecnologia utilizada en la integracion",
+      "Funcionalidades disponibles en el sistema",
+      "Factura electronica de venta (FV)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE GIMNASIO — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE GIMNASIO. COL_GYM-SYSTEM Manual tecnico y operativo",
+    "keywords": [
+      "SISTEMA DE GIMNASIO",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-gimnasio",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-107",
+    "slug": "saas-odontologia",
+    "name": "SaaS Odontología",
+    "subtitle": "Solução saas para clinica.",
+    "description": "SaaS Odontología. OdontoCRM Sistema de Gestión para Clínicas Dentales Documentación técnica: tecnología, funcionalidades, instalación en una computadora nueva y guía de publicación en un hosting web.",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/saas-odontologia.svg",
+    "thumbnail": "/thumbnails/saas-odontologia.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-odontologia",
+    "requestUrl": "/request?app=saas-odontologia",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Ficha completa y buscador global",
+      "Listado y calendario mensual",
+      "Odontograma interactivo",
+      "Disponibilidad por doctor y silla (antisolapamiento)",
+      "Antecedentes médicos estructurados, alergias",
+      "Confirmación de cita por enlace público",
+      "Evolución clínica por sesión",
+      "Recordatorios por email y WhatsApp"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Odontología — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "SaaS Odontología. OdontoCRM Sistema de Gestión para Clínicas Dentales Documentación técnica: tecnología, funcionalidades, instalación en una computadora nueva y",
+    "keywords": [
+      "SaaS Odontología",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-odontologia",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-108",
+    "slug": "sistema-de-botica",
+    "name": "SISTEMA DE BOTICA",
+    "subtitle": "Solução saas para clinica.",
+    "description": "SISTEMA DE BOTICA. D O C U M E N TAC I Ó N T É C N I C A Y F U N C I O N A L",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/sistema-de-botica.svg",
+    "thumbnail": "/thumbnails/sistema-de-botica.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-botica",
+    "requestUrl": "/request?app=sistema-de-botica",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "MySQL"
+    ],
+    "features": [
+      "XML UBL",
+      "Respuesta",
+      "Envío DIAN",
+      "NIT de la empresa con su dígito de verificación.",
+      "Razón social exacta (o nombre, si es persona natural).",
+      "Dirección del establecimiento, ciudad y códigos DANE de municipio y departamento.",
+      "Teléfono y correo electrónico de contacto.",
+      "Tipo de persona: jurídica o natural."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE BOTICA — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE BOTICA. D O C U M E N TAC I Ó N T É C N I C A Y F U N C I O N A L",
+    "keywords": [
+      "SISTEMA DE BOTICA",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-botica",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-109",
+    "slug": "crm-delivery",
+    "name": "CRM-DELIVERY",
+    "subtitle": "Solução saas para escritorio.",
+    "description": "CRM-DELIVERY. CRM DELIVERY Manual de Sistema y Despliegue",
+    "shortDescription": "Solução saas para escritorio.",
+    "icon": "/icons/crm-delivery.svg",
+    "thumbnail": "/thumbnails/crm-delivery.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/crm-delivery",
+    "requestUrl": "/request?app=crm-delivery",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías utilizadas",
+      "Funcionalidades del sistema",
+      "niveles: solo transaccional, operativo o total (nueva empresa).",
+      "Instalación local paso a paso",
+      "Entra a laragon.org y descarga la versión Laragon Full (incluye PHP, MySQL, Apache).",
+      "Ejecuta el instalador con doble clic. Acepta la ruta por defecto C:\\laragon.",
+      "Al terminar, abre Laragon y haz clic en \"Iniciar Todo\". Verás los servicios Apache y MySQL en verde.",
+      "Verifica que PHP funciona: clic en Menú → PHP → Versión debe mostrar 8.3 o superior."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "CRM-DELIVERY — Solução saas para escritorio. | NEXO Digital Store",
+    "metaDescription": "CRM-DELIVERY. CRM DELIVERY Manual de Sistema y Despliegue",
+    "keywords": [
+      "CRM-DELIVERY",
+      "Solução saas para escritorio.",
+      "saas",
+      "other",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "crm-delivery",
+      "saas",
+      "other",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-110",
+    "slug": "saas-clinica",
+    "name": "SaaS Clínica",
+    "subtitle": "Solução saas para clinica.",
+    "description": "SaaS Clínica. SaaS Clinica Sistema de Gestion Clinica Multi-Clinica Documentacion Tecnica & Guia de Instalacion y Despliegue",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/saas-clinica.svg",
+    "thumbnail": "/thumbnails/saas-clinica.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-clinica",
+    "requestUrl": "/request?app=saas-clinica",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologia utilizada",
+      "Funcionalidades del sistema",
+      "Instalacion local (paso a paso)",
+      "Hosting web recomendado",
+      "Despliegue en el hosting (paso a paso)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Clínica — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "SaaS Clínica. SaaS Clinica Sistema de Gestion Clinica Multi-Clinica Documentacion Tecnica & Guia de Instalacion y Despliegue",
+    "keywords": [
+      "SaaS Clínica",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-clinica",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-111",
+    "slug": "tpv-zapateria",
+    "name": "TPV Zapateria",
+    "subtitle": "Solução tpv para loja.",
+    "description": "TPV Zapateria. DOCUMENTACIÓN OFICIAL · V1.0.0",
+    "shortDescription": "Solução tpv para loja.",
+    "icon": "/icons/tpv-zapateria.svg",
+    "thumbnail": "/thumbnails/tpv-zapateria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-zapateria",
+    "requestUrl": "/request?app=tpv-zapateria",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Gestão de vendas",
+      "Controle de estoque",
+      "Multi-usuário",
+      "Relatórios"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Zapateria — Solução tpv para loja. | NEXO Digital Store",
+    "metaDescription": "TPV Zapateria. DOCUMENTACIÓN OFICIAL · V1.0.0",
+    "keywords": [
+      "TPV Zapateria",
+      "Solução tpv para loja.",
+      "tpv",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-zapateria",
+      "tpv",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-112",
+    "slug": "gestor-documental-abogados",
+    "name": "GESTOR DOCUMENTAL ABOGADOS",
+    "subtitle": "Solução app para seu negócio.",
+    "description": "GESTOR DOCUMENTAL ABOGADOS. LexDoc Gestor Documental para Estudios Juridicos",
+    "shortDescription": "Solução app para seu negócio.",
+    "icon": "/icons/gestor-documental-abogados.svg",
+    "thumbnail": "/thumbnails/gestor-documental-abogados.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "app",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/gestor-documental-abogados",
+    "requestUrl": "/request?app=gestor-documental-abogados",
+    "pricing": "free",
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologia utilizada",
+      "graficos estadisticos del dashboard",
+      "Funcionalidades del sistema",
+      "Instalacion en una computadora nueva",
+      "Hosting web sugerido",
+      "Como subirlo a PythonAnywhere (paso a paso)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "GESTOR DOCUMENTAL ABOGADOS — Solução app para seu negócio. | NEXO Digital Store",
+    "metaDescription": "GESTOR DOCUMENTAL ABOGADOS. LexDoc Gestor Documental para Estudios Juridicos",
+    "keywords": [
+      "GESTOR DOCUMENTAL ABOGADOS",
+      "Solução app para seu negócio.",
+      "app",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "gestor-documental-abogados",
+      "app",
+      "other",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-113",
+    "slug": "tpv-peluqueria",
+    "name": "TPV Peluquería",
+    "subtitle": "Solução tpv para barbearia.",
+    "description": "TPV Peluquería. T TPV Peluquería Sistema de gestión integral para peluquerías, barberías y salones de belleza",
+    "shortDescription": "Solução tpv para barbearia.",
+    "icon": "/icons/tpv-peluqueria.svg",
+    "thumbnail": "/thumbnails/tpv-peluqueria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "barbearia",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-peluqueria",
+    "requestUrl": "/request?app=tpv-peluqueria",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías utilizadas",
+      "Funcionalidades",
+      "módulos integrados en un solo sistema",
+      "Instalación en una computadora nueva",
+      "Hostings web recomendados",
+      "Subir el sistema a Hostinger"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Peluquería — Solução tpv para barbearia. | NEXO Digital Store",
+    "metaDescription": "TPV Peluquería. T TPV Peluquería Sistema de gestión integral para peluquerías, barberías y salones de belleza",
+    "keywords": [
+      "TPV Peluquería",
+      "Solução tpv para barbearia.",
+      "tpv",
+      "health",
+      "barbearia",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-peluqueria",
+      "tpv",
+      "health",
+      "barbearia"
+    ]
+  },
+  {
+    "id": "gd-114",
+    "slug": "sistema-de-hospedaje",
+    "name": "SISTEMA DE HOSPEDAJE",
+    "subtitle": "Solução saas para escritorio.",
+    "description": "SISTEMA DE HOSPEDAJE. MANUAL TÉCNICO · v1.0",
+    "shortDescription": "Solução saas para escritorio.",
+    "icon": "/icons/sistema-de-hospedaje.svg",
+    "thumbnail": "/thumbnails/sistema-de-hospedaje.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-hospedaje",
+    "requestUrl": "/request?app=sistema-de-hospedaje",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnología de desarrollo — stack y librerías",
+      "Funcionalidades del sistema — módulos para casos reales",
+      "Instalación en una computadora nueva — programas y configuración",
+      "Hosting web recomendado — opciones y comparativa",
+      "Despliegue en el hosting recomendado — guía paso a paso"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE HOSPEDAJE — Solução saas para escritorio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE HOSPEDAJE. MANUAL TÉCNICO · v1.0",
+    "keywords": [
+      "SISTEMA DE HOSPEDAJE",
+      "Solução saas para escritorio.",
+      "saas",
+      "other",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-hospedaje",
+      "saas",
+      "other",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-115",
+    "slug": "tpv-panaderia",
+    "name": "TPV Panadería",
+    "subtitle": "Solução tpv para restaurante.",
+    "description": "TPV Panadería. P TPV PANADERÍA Sistema de Punto de Venta para Panaderías, Pastelerías y Confiterías",
+    "shortDescription": "Solução tpv para restaurante.",
+    "icon": "/icons/tpv-panaderia.svg",
+    "thumbnail": "/thumbnails/tpv-panaderia.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-panaderia",
+    "requestUrl": "/request?app=tpv-panaderia",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías utilizadas",
+      "controladores (TPV, Productos, Stock, etc.)",
+      "modelos Eloquent con relaciones",
+      "migraciones que crean todo el esquema",
+      "plantillas Blade",
+      "Funcionalidades del sistema",
+      "Interfaz visual moderna con paleta panadería (tonos cálidos y profesionales).",
+      "TPV optimizado para pantalla táctil: ideal para mostrador."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Panadería — Solução tpv para restaurante. | NEXO Digital Store",
+    "metaDescription": "TPV Panadería. P TPV PANADERÍA Sistema de Punto de Venta para Panaderías, Pastelerías y Confiterías",
+    "keywords": [
+      "TPV Panadería",
+      "Solução tpv para restaurante.",
+      "tpv",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-panaderia",
+      "tpv",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-116",
+    "slug": "saas-botica",
+    "name": "SaaS Botica",
+    "subtitle": "Solução saas para clinica.",
+    "description": "SaaS Botica. Manual del Sistema Sistema de Gestión para Botica / Farmacia Tecnología, funcionalidades, instalación y publicación en internet",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/saas-botica.svg",
+    "thumbnail": "/thumbnails/saas-botica.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-botica",
+    "requestUrl": "/request?app=saas-botica",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard web",
+      "Gestão centralizada",
+      "Relatórios",
+      "Multi-usuário"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Botica — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "SaaS Botica. Manual del Sistema Sistema de Gestión para Botica / Farmacia Tecnología, funcionalidades, instalación y publicación en internet",
+    "keywords": [
+      "SaaS Botica",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-botica",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-117",
+    "slug": "saas-citas-medicas",
+    "name": "SaaS Citas Médicas",
+    "subtitle": "Solução saas para seu negócio.",
+    "description": "SaaS Citas Médicas. CitasMédicas SaaS CLÍNICO",
+    "shortDescription": "Solução saas para seu negócio.",
+    "icon": "/icons/saas-citas-medicas.svg",
+    "thumbnail": "/thumbnails/saas-citas-medicas.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-citas-medicas",
+    "requestUrl": "/request?app=saas-citas-medicas",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard web",
+      "Gestão centralizada",
+      "Relatórios",
+      "Multi-usuário"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Citas Médicas — Solução saas para seu negócio. | NEXO Digital Store",
+    "metaDescription": "SaaS Citas Médicas. CitasMédicas SaaS CLÍNICO",
+    "keywords": [
+      "SaaS Citas Médicas",
+      "Solução saas para seu negócio.",
+      "saas",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-citas-medicas",
+      "saas",
+      "other",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-118",
+    "slug": "tpv-minimarket",
+    "name": "TPV Minimarket",
+    "subtitle": "Solução tpv para loja.",
+    "description": "TPV Minimarket. S I ST E M A T PV M I N I M A R K E T",
+    "shortDescription": "Solução tpv para loja.",
+    "icon": "/icons/tpv-minimarket.svg",
+    "thumbnail": "/thumbnails/tpv-minimarket.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-minimarket",
+    "requestUrl": "/request?app=tpv-minimarket",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnología con la que fue desarrollada la integración",
+      "Funcionalidades de la facturación electrónica",
+      "Datos que debe proporcionar el dueño de la empresa",
+      "Configuración paso a paso para producción",
+      "Clave de acceso",
+      "Firma digital",
+      "Recepción",
+      "dígitos + XML"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Minimarket — Solução tpv para loja. | NEXO Digital Store",
+    "metaDescription": "TPV Minimarket. S I ST E M A T PV M I N I M A R K E T",
+    "keywords": [
+      "TPV Minimarket",
+      "Solução tpv para loja.",
+      "tpv",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-minimarket",
+      "tpv",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-119",
+    "slug": "sistema-de-restaurante",
+    "name": "SISTEMA DE RESTAURANTE",
+    "subtitle": "Solução site para restaurante.",
+    "description": "SISTEMA DE RESTAURANTE. FACTURACIÓN ELECTRÓNICA DIAN República de Colombia",
+    "shortDescription": "Solução site para restaurante.",
+    "icon": "/icons/sistema-de-restaurante.svg",
+    "thumbnail": "/thumbnails/sistema-de-restaurante.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "php",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-restaurante",
+    "requestUrl": "/request?app=sistema-de-restaurante",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Php",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnología utilizada",
+      "Funcionalidades del sistema",
+      "Emisión desde el POS al cerrar la venta.",
+      "Generación del XML UBL 2.1 con extensiones DIAN.",
+      "Firma XAdES-EPES con el certificado .p12.",
+      "Cálculo del CUFE (SHA-384) según fórmula DIAN.",
+      "Envío sincrónico vía SOAP (SendBillSync).",
+      "Almacenamiento del XML firmado y del AR."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE RESTAURANTE — Solução site para restaurante. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE RESTAURANTE. FACTURACIÓN ELECTRÓNICA DIAN República de Colombia",
+    "keywords": [
+      "SISTEMA DE RESTAURANTE",
+      "Solução site para restaurante.",
+      "site",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-restaurante",
+      "site",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-120",
+    "slug": "tpv-hosteleria",
+    "name": "TPV_Hosteleria",
+    "subtitle": "Solução tpv para restaurante.",
+    "description": "TPV_Hosteleria. TPV Hosteleria Manual del Sistema Software POS para restaurantes, bares y cafeterías. Comandas, mesas, cocina, caja, stock e informes — preparado para VeriFactu y TicketBAI. PHP 8.2 + Laravel 11",
+    "shortDescription": "Solução tpv para restaurante.",
+    "icon": "/icons/tpv-hosteleria.svg",
+    "thumbnail": "/thumbnails/tpv-hosteleria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-hosteleria",
+    "requestUrl": "/request?app=tpv-hosteleria",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnología de desarrollo ········· Stack backend, frontend y librerías",
+      "Funcionalidades del sistema ········· Módulos operativos y de gestión",
+      "Instalación en una computadora nueva ········· Programas a instalar y configuración paso a",
+      "Hosting web recomendado ········· Comparativa de opciones",
+      "Puesta en producción paso a paso ········· Subir la app al hosting recomendado"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV_Hosteleria — Solução tpv para restaurante. | NEXO Digital Store",
+    "metaDescription": "TPV_Hosteleria. TPV Hosteleria Manual del Sistema Software POS para restaurantes, bares y cafeterías. Comandas, mesas, cocina, caja, stock e informes — preparad",
+    "keywords": [
+      "TPV_Hosteleria",
+      "Solução tpv para restaurante.",
+      "tpv",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-hosteleria",
+      "tpv",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-121",
+    "slug": "tpv-cafeteria",
+    "name": "TPV Cafeteria",
+    "subtitle": "Solução tpv para restaurante.",
+    "description": "TPV Cafeteria. Sistema TPV Cafetería Punto de Venta · Documentación de tecnología, instalación y despliegue web",
+    "shortDescription": "Solução tpv para restaurante.",
+    "icon": "/icons/tpv-cafeteria.svg",
+    "thumbnail": "/thumbnails/tpv-cafeteria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-cafeteria",
+    "requestUrl": "/request?app=tpv-cafeteria",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnología utilizada",
+      "Funcionalidades del sistema",
+      "Instalación en una computadora nueva",
+      "Hosting web recomendado",
+      "Cómo subir la aplicación al hosting (paso a paso)",
+      "· Dashboard",
+      "· Punto de Venta (POS)",
+      "· Productos y Categorías"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Cafeteria — Solução tpv para restaurante. | NEXO Digital Store",
+    "metaDescription": "TPV Cafeteria. Sistema TPV Cafetería Punto de Venta · Documentación de tecnología, instalación y despliegue web",
+    "keywords": [
+      "TPV Cafeteria",
+      "Solução tpv para restaurante.",
+      "tpv",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-cafeteria",
+      "tpv",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-122",
+    "slug": "saas-minimarket",
+    "name": "SaaS Minimarket",
+    "subtitle": "Solução saas para loja.",
+    "description": "SaaS Minimarket. SISTEMA DE PUNTO DE VENTA · SaaS",
+    "shortDescription": "Solução saas para loja.",
+    "icon": "/icons/saas-minimarket.svg",
+    "thumbnail": "/thumbnails/saas-minimarket.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-minimarket",
+    "requestUrl": "/request?app=saas-minimarket",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard web",
+      "Gestão centralizada",
+      "Relatórios",
+      "Multi-usuário"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Minimarket — Solução saas para loja. | NEXO Digital Store",
+    "metaDescription": "SaaS Minimarket. SISTEMA DE PUNTO DE VENTA · SaaS",
+    "keywords": [
+      "SaaS Minimarket",
+      "Solução saas para loja.",
+      "saas",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-minimarket",
+      "saas",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-123",
+    "slug": "saas-tienda-moda",
+    "name": "SaaS Tienda Moda",
+    "subtitle": "Solução saas para loja.",
+    "description": "SaaS Tienda Moda. SaaS Tienda Moda Sistema de Gestion Multi-Tienda para Moda",
+    "shortDescription": "Solução saas para loja.",
+    "icon": "/icons/saas-tienda-moda.svg",
+    "thumbnail": "/thumbnails/saas-tienda-moda.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-tienda-moda",
+    "requestUrl": "/request?app=saas-tienda-moda",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Inicio de sesion seguro",
+      "Registro publico de nuevas tiendas",
+      "15 dias de prueba gratis",
+      "Cierre de sesion",
+      "KPIs: ventas hoy/mes, clientes, stock",
+      "Grafico de ventas (7 dias)",
+      "Ventas por categoria",
+      "Inventario por categoria y metodos de pago"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Tienda Moda — Solução saas para loja. | NEXO Digital Store",
+    "metaDescription": "SaaS Tienda Moda. SaaS Tienda Moda Sistema de Gestion Multi-Tienda para Moda",
+    "keywords": [
+      "SaaS Tienda Moda",
+      "Solução saas para loja.",
+      "saas",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-tienda-moda",
+      "saas",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-124",
+    "slug": "saas-restaurante",
+    "name": "SaaS Restaurante",
+    "subtitle": "Solução saas para restaurante.",
+    "description": "SaaS Restaurante. R Mi Restaurante VIP Sistema SaaS de gestion para restaurantes",
+    "shortDescription": "Solução saas para restaurante.",
+    "icon": "/icons/saas-restaurante.svg",
+    "thumbnail": "/thumbnails/saas-restaurante.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-restaurante",
+    "requestUrl": "/request?app=saas-restaurante",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Punto de Venta (POS) con IGV, descuentos y",
+      "Gestion de mesas en tiempo real",
+      "Reservas con asignacion de mesa",
+      "Pedidos y cambios de estado",
+      "Cocina (KDS): tablero en vivo de comandas",
+      "Caja: apertura, movimientos, cierre y arqueo",
+      "Base de clientes",
+      "Fidelizacion por puntos (ganar y canjear)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Restaurante — Solução saas para restaurante. | NEXO Digital Store",
+    "metaDescription": "SaaS Restaurante. R Mi Restaurante VIP Sistema SaaS de gestion para restaurantes",
+    "keywords": [
+      "SaaS Restaurante",
+      "Solução saas para restaurante.",
+      "saas",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-restaurante",
+      "saas",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-125",
+    "slug": "saas-ferreteria",
+    "name": "SaaS Ferretería",
+    "subtitle": "Solução saas para loja.",
+    "description": "SaaS Ferretería. FerreMax SaaS Sistema de Gestion para Ferreterias Documentacion tecnica · Instalacion · Despliegue",
+    "shortDescription": "Solução saas para loja.",
+    "icon": "/icons/saas-ferreteria.svg",
+    "thumbnail": "/thumbnails/saas-ferreteria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-ferreteria",
+    "requestUrl": "/request?app=saas-ferreteria",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "· Tecnologia de desarrollo",
+      "· Funcionalidades del sistema",
+      "· Instalacion en una PC nueva",
+      "· Hosting web recomendado",
+      "· Despliegue paso a paso en Hostinger",
+      "· Recomendaciones finales"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Ferretería — Solução saas para loja. | NEXO Digital Store",
+    "metaDescription": "SaaS Ferretería. FerreMax SaaS Sistema de Gestion para Ferreterias Documentacion tecnica · Instalacion · Despliegue",
+    "keywords": [
+      "SaaS Ferretería",
+      "Solução saas para loja.",
+      "saas",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-ferreteria",
+      "saas",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-126",
+    "slug": "crm-gestion-tienda-celulares",
+    "name": "CRM-GESTION-TIENDA-CELULARES",
+    "subtitle": "Solução saas para loja.",
+    "description": "CRM-GESTION-TIENDA-CELULARES. C CRM Tienda Celulares Sistema de Gestion Integral Manual Tecnico, Guia de Instalacion y Despliegue en Hosting Web PHP 8.1",
+    "shortDescription": "Solução saas para loja.",
+    "icon": "/icons/crm-gestion-tienda-celulares.svg",
+    "thumbnail": "/thumbnails/crm-gestion-tienda-celulares.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/crm-gestion-tienda-celulares",
+    "requestUrl": "/request?app=crm-gestion-tienda-celulares",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Python",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard web",
+      "Gestão centralizada",
+      "Relatórios",
+      "Multi-usuário"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "CRM-GESTION-TIENDA-CELULARES — Solução saas para loja. | NEXO Digital Store",
+    "metaDescription": "CRM-GESTION-TIENDA-CELULARES. C CRM Tienda Celulares Sistema de Gestion Integral Manual Tecnico, Guia de Instalacion y Despliegue en Hosting Web PHP 8.1",
+    "keywords": [
+      "CRM-GESTION-TIENDA-CELULARES",
+      "Solução saas para loja.",
+      "saas",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "crm-gestion-tienda-celulares",
+      "saas",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-127",
+    "slug": "saas-hospedaje",
+    "name": "SaaS Hospedaje",
+    "subtitle": "Solução saas para escritorio.",
+    "description": "SaaS Hospedaje. Hospedaje Pro Sistema SaaS de Gestion Hotelera Documentacion tecnica, instalacion y despliegue",
+    "shortDescription": "Solução saas para escritorio.",
+    "icon": "/icons/saas-hospedaje.svg",
+    "thumbnail": "/thumbnails/saas-hospedaje.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-hospedaje",
+    "requestUrl": "/request?app=saas-hospedaje",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologia de desarrollo",
+      "Funcionalidades del sistema",
+      "Instalacion en una computadora nueva",
+      "Hosting web sugerido",
+      "- 9 /mes",
+      "- 20 /mes",
+      "Como subir el sistema a Hostinger"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Hospedaje — Solução saas para escritorio. | NEXO Digital Store",
+    "metaDescription": "SaaS Hospedaje. Hospedaje Pro Sistema SaaS de Gestion Hotelera Documentacion tecnica, instalacion y despliegue",
+    "keywords": [
+      "SaaS Hospedaje",
+      "Solução saas para escritorio.",
+      "saas",
+      "other",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-hospedaje",
+      "saas",
+      "other",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-128",
+    "slug": "crm-odontologia",
+    "name": "CRM_ODONTOLOGIA",
+    "subtitle": "Solução saas para clinica.",
+    "description": "CRM_ODONTOLOGIA. Manual Técnico & Guía de Implementación Sistema CRM para Odontología",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/crm-odontologia.svg",
+    "thumbnail": "/thumbnails/crm-odontologia.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/crm-odontologia",
+    "requestUrl": "/request?app=crm-odontologia",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías del Desarrollo 🛠️",
+      "Funcionalidades del Sistema ⚙️",
+      "Dashboard y Analíticas:",
+      "Gestión de Pacientes e Historia Clínica:",
+      "Odontograma Interactivo:",
+      "Módulo de Citas y Calendario:",
+      "Presupuestos y Finanzas:",
+      "Gestión de Tratamientos y Categorías:"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "CRM_ODONTOLOGIA — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "CRM_ODONTOLOGIA. Manual Técnico & Guía de Implementación Sistema CRM para Odontología",
+    "keywords": [
+      "CRM_ODONTOLOGIA",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "crm-odontologia",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-129",
+    "slug": "tpv-fastfood",
+    "name": "TPV Fastfood",
+    "subtitle": "Solução tpv para restaurante.",
+    "description": "TPV Fastfood. Manual Técnico y Despliegue - TPV FastFood",
+    "shortDescription": "Solução tpv para restaurante.",
+    "icon": "/icons/tpv-fastfood.svg",
+    "thumbnail": "/thumbnails/tpv-fastfood.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-fastfood",
+    "requestUrl": "/request?app=tpv-fastfood",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Descargar e instalar XAMPP (incluye PHP y MySQL).",
+      "Descargar e instalar Composer (Gestor de dependencias de PHP).",
+      "Un editor de código como Visual Studio Code.",
+      "Copia la carpeta del proyecto crm-tpv-fastfood dentro del directorio de tu servidor local:",
+      "Abre el panel de control de XAMPP e inicia los módulos de Apache y MySQL.",
+      "Abre tu navegador y entra a http://localhost/phpmyadmin . Crea una nueva base de datos",
+      "En la carpeta del proyecto, duplica el archivo .env.example y renómbralo como .env .",
+      "Abre el archivo .env y configura la conexión a la base de datos:"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Fastfood — Solução tpv para restaurante. | NEXO Digital Store",
+    "metaDescription": "TPV Fastfood. Manual Técnico y Despliegue - TPV FastFood",
+    "keywords": [
+      "TPV Fastfood",
+      "Solução tpv para restaurante.",
+      "tpv",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-fastfood",
+      "tpv",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-130",
+    "slug": "saas-academia",
+    "name": "SaaS Academia",
+    "subtitle": "Solução saas para clinica.",
+    "description": "SaaS Academia. A AcademiaPro SISTEMA SaaS DE GESTIÓN DE ACADEMIAS",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/saas-academia.svg",
+    "thumbnail": "/thumbnails/saas-academia.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-academia",
+    "requestUrl": "/request?app=saas-academia",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Multi-tenant (single-database): cada academia se aísla con una columna academia_id y un global scope",
+      "Control de acceso por roles y permisos por módulo (Super Admin, Admin, Secretaría, Docente,",
+      "Seguridad: contraseñas cifradas (hash), protección CSRF, validación de formularios y middleware de",
+      "Bitácora de auditoría automática de altas, cambios, bajas e inicios de sesión.",
+      "Panel global con métricas e ingresos (MRR)",
+      "Landing con presentación y precios",
+      "Gestión de academias (alta, edición, baja)",
+      "Registro self-service (15 días de prueba)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Academia — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "SaaS Academia. A AcademiaPro SISTEMA SaaS DE GESTIÓN DE ACADEMIAS",
+    "keywords": [
+      "SaaS Academia",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-academia",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-131",
+    "slug": "tpv-joyeria-y-relojeria",
+    "name": "TPV Joyería y relojería",
+    "subtitle": "Solução tpv para loja.",
+    "description": "TPV Joyería y relojería. TPV JOYERIA y RELOJERIA Sistema de punto de venta profesional Para joyerias, relojerias y bisuterias",
+    "shortDescription": "Solução tpv para loja.",
+    "icon": "/icons/tpv-joyeria-y-relojeria.svg",
+    "thumbnail": "/thumbnails/tpv-joyeria-y-relojeria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-joyeria-y-relojeria",
+    "requestUrl": "/request?app=tpv-joyeria-y-relojeria",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologias utilizadas",
+      "Funcionalidades del sistema",
+      "Multiidioma y multimoneda: Configurable para Espana (EUR, IVA 21%), Mexico (MXN, IVA",
+      "Multi-usuario con roles: Administrador, vendedor, cajero, tecnico. Cada uno con permisos",
+      "Dashboard interactivo: 8 KPIs en tarjetas, 4 graficos en tiempo real (linea, barras, doughnut,",
+      "TPV optimizado: Atajos de teclado, busqueda con escaner, cobro en multiples metodos de",
+      "Trazabilidad de stock: Cada movimiento queda registrado con usuario, fecha y motivo.",
+      "Documentos profesionales: Tickets para impresora termica y facturas A4 con datos fiscales."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Joyería y relojería — Solução tpv para loja. | NEXO Digital Store",
+    "metaDescription": "TPV Joyería y relojería. TPV JOYERIA y RELOJERIA Sistema de punto de venta profesional Para joyerias, relojerias y bisuterias",
+    "keywords": [
+      "TPV Joyería y relojería",
+      "Solução tpv para loja.",
+      "tpv",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-joyeria-y-relojeria",
+      "tpv",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-132",
+    "slug": "saas-prestamos-y-cobranza",
+    "name": "Saas Préstamos y Cobranza",
+    "subtitle": "Solução saas para escritorio.",
+    "description": "Saas Préstamos y Cobranza. Prestamos Pro - Documentacion Tecnica",
+    "shortDescription": "Solução saas para escritorio.",
+    "icon": "/icons/saas-prestamos-y-cobranza.svg",
+    "thumbnail": "/thumbnails/saas-prestamos-y-cobranza.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/saas-prestamos-y-cobranza",
+    "requestUrl": "/request?app=saas-prestamos-y-cobranza",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard web",
+      "Gestão centralizada",
+      "Relatórios",
+      "Multi-usuário"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "Saas Préstamos y Cobranza — Solução saas para escritorio. | NEXO Digital Store",
+    "metaDescription": "Saas Préstamos y Cobranza. Prestamos Pro - Documentacion Tecnica",
+    "keywords": [
+      "Saas Préstamos y Cobranza",
+      "Solução saas para escritorio.",
+      "saas",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "saas-prestamos-y-cobranza",
+      "saas",
+      "finance",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-133",
+    "slug": "sistema-de-prestamos-y-cobranzas",
+    "name": "SISTEMA DE PRÉSTAMOS Y COBRANZAS",
+    "subtitle": "Solução site para escritorio.",
+    "description": "SISTEMA DE PRÉSTAMOS Y COBRANZAS — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução site para escritorio.",
+    "icon": "/icons/sistema-de-prestamos-y-cobranzas.svg",
+    "thumbnail": "/thumbnails/sistema-de-prestamos-y-cobranzas.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-prestamos-y-cobranzas",
+    "requestUrl": "/request?app=sistema-de-prestamos-y-cobranzas",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Design responsivo",
+      "SEO otimizado",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE PRÉSTAMOS Y COBRANZAS — Solução site para escritorio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE PRÉSTAMOS Y COBRANZAS — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "SISTEMA DE PRÉSTAMOS Y COBRANZAS",
+      "Solução site para escritorio.",
+      "site",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-prestamos-y-cobranzas",
+      "site",
+      "finance",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-134",
+    "slug": "sistema-gestion-de-biblioteca",
+    "name": "SISTEMA GESTIÓN DE BIBLIOTECA",
+    "subtitle": "Solução site para seu negócio.",
+    "description": "SISTEMA GESTIÓN DE BIBLIOTECA — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução site para seu negócio.",
+    "icon": "/icons/sistema-gestion-de-biblioteca.svg",
+    "thumbnail": "/thumbnails/sistema-gestion-de-biblioteca.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "python",
+    "industry": "education",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-gestion-de-biblioteca",
+    "requestUrl": "/request?app=sistema-gestion-de-biblioteca",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Python",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Design responsivo",
+      "SEO otimizado",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA GESTIÓN DE BIBLIOTECA — Solução site para seu negócio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA GESTIÓN DE BIBLIOTECA — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "SISTEMA GESTIÓN DE BIBLIOTECA",
+      "Solução site para seu negócio.",
+      "site",
+      "education",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-gestion-de-biblioteca",
+      "site",
+      "education",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-135",
+    "slug": "sistema-de-polleria",
+    "name": "SISTEMA DE POLLERIA",
+    "subtitle": "Solução site para restaurante.",
+    "description": "SISTEMA DE POLLERIA. Documentación Técnica y de Usuario: Sistema de Pollería MERN 1. Tecnología de Desarrollo (Stack Tecnológico) El sistema ha sido desarrollado utilizando el stack MERN (con una adaptación en la base de datos). Las tecnologías principales son:",
+    "shortDescription": "Solução site para restaurante.",
+    "icon": "/icons/sistema-de-polleria.svg",
+    "thumbnail": "/thumbnails/sistema-de-polleria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-polleria",
+    "requestUrl": "/request?app=sistema-de-polleria",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnología de Desarrollo (Stack Tecnológico)",
+      "Funcionalidades del Sistema",
+      "Dashboard (Panel de Control): Muestra gráficos y estadísticas en tiempo real (KPIs) sobre ingresos, ventas",
+      "Punto de Venta (POS): Pantalla optimizada para que los cajeros o meseros registren pedidos rápidamente.",
+      "Gestión de Cajas: Permite la apertura y cierre de caja, registro manual de ingresos extras y egresos diarios.",
+      "Clientes y CRM: Registro de clientes frecuentes, visualización de su perfil, historial de compras y estrategias",
+      "Catálogo y Productos: Administración del menú o catálogo de venta. Creación, edición y eliminación de",
+      "Gestión de Pedidos: Pantalla tipo KDS (Kitchen Display System) para ver el estado de los pedidos en tiempo"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE POLLERIA — Solução site para restaurante. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE POLLERIA. Documentación Técnica y de Usuario: Sistema de Pollería MERN 1. Tecnología de Desarrollo (Stack Tecnológico) El sistema ha sido desarrollad",
+    "keywords": [
+      "SISTEMA DE POLLERIA",
+      "Solução site para restaurante.",
+      "site",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-polleria",
+      "site",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-136",
+    "slug": "erp-farmacia",
+    "name": "ERP_FARMACIA",
+    "subtitle": "Solução saas para clinica.",
+    "description": "ERP_FARMACIA. documentacion_sistema.md",
+    "shortDescription": "Solução saas para clinica.",
+    "icon": "/icons/erp-farmacia.svg",
+    "thumbnail": "/thumbnails/erp-farmacia.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/erp-farmacia",
+    "requestUrl": "/request?app=erp-farmacia",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "**Punto de Venta (POS):** Venta rápida con búsqueda en tiempo real y gestión de caja.",
+      "**Inventario de Productos:** Control de stock, categorías y alertas de existencias bajas.",
+      "**Gestión de Lotes:** Control de fechas de vencimiento por lote de producto.",
+      "**Caja Registradora:** Flujo completo de apertura, movimientos y cierre diario.",
+      "**Recetas Médicas:** Control de medicamentos que requieren prescripción.",
+      "**Compras y Proveedores:** Registro de órdenes de compra y recepción de mercadería.",
+      "**Clientes y Fidelidad:** Historial de pacientes y sistema de puntos.",
+      "**Reportes:** Exportación de ventas, stock y vencimientos."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "ERP_FARMACIA — Solução saas para clinica. | NEXO Digital Store",
+    "metaDescription": "ERP_FARMACIA. documentacion_sistema.md",
+    "keywords": [
+      "ERP_FARMACIA",
+      "Solução saas para clinica.",
+      "saas",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "erp-farmacia",
+      "saas",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-137",
+    "slug": "sistema-de-veterinaria",
+    "name": "SISTEMA DE VETERINARIA",
+    "subtitle": "Solução site para clinica.",
+    "description": "SISTEMA DE VETERINARIA. Manual Técnico VetSystem",
+    "shortDescription": "Solução site para clinica.",
+    "icon": "/icons/sistema-de-veterinaria.svg",
+    "thumbnail": "/thumbnails/sistema-de-veterinaria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "python",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-veterinaria",
+    "requestUrl": "/request?app=sistema-de-veterinaria",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Python",
+      "PHP",
+      "Django",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías de Desarrollo",
+      "Funcionalidades del Sistema",
+      "Instalación y Configuración Local",
+      "Instalar Python 3.10 o superior (asegurarse de marcar la casilla \"Add Python to PATH\"",
+      "Instalar un servidor local de bases de datos como XAMPP, WAMP o instalar MySQL",
+      "Preparar la Base de Datos:",
+      "Configurar el Proyecto:",
+      "Entorno Virtual y Dependencias (Recomendado):"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE VETERINARIA — Solução site para clinica. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE VETERINARIA. Manual Técnico VetSystem",
+    "keywords": [
+      "SISTEMA DE VETERINARIA",
+      "Solução site para clinica.",
+      "site",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-veterinaria",
+      "site",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-138",
+    "slug": "tpv-papeleria-y-libreria",
+    "name": "TPV Papeleria y Libreria",
+    "subtitle": "Solução tpv para loja.",
+    "description": "TPV Papeleria y Libreria. TPV Papeleria y Libreria Software de Punto de Venta Manual Tecnico y Guia de Instalacion",
+    "shortDescription": "Solução tpv para loja.",
+    "icon": "/icons/tpv-papeleria-y-libreria.svg",
+    "thumbnail": "/thumbnails/tpv-papeleria-y-libreria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-papeleria-y-libreria",
+    "requestUrl": "/request?app=tpv-papeleria-y-libreria",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Gestão de vendas",
+      "Controle de estoque",
+      "Multi-usuário",
+      "Relatórios"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Papeleria y Libreria — Solução tpv para loja. | NEXO Digital Store",
+    "metaDescription": "TPV Papeleria y Libreria. TPV Papeleria y Libreria Software de Punto de Venta Manual Tecnico y Guia de Instalacion",
+    "keywords": [
+      "TPV Papeleria y Libreria",
+      "Solução tpv para loja.",
+      "tpv",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-papeleria-y-libreria",
+      "tpv",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-139",
+    "slug": "sistema-de-panaderia-y-pasteleria",
+    "name": "SISTEMA DE PANADERIA Y PASTELERIA",
+    "subtitle": "Solução site para restaurante.",
+    "description": "SISTEMA DE PANADERIA Y PASTELERIA. Documentación Técnica y de Usuario Sistema Integral de Gestión para Panadería y Pastelería 1. Tecnologías de Desarrollo El sistema ha sido desarrollado utilizando un stack tecnológico moderno, robusto y escalable, pensado para garantizar alto rendimiento y seguridad: Backend: PHP 8.2 con el framework Laravel 12.0, el estándar de la industria para aplicaciones web robustas. Frontend: HTML5, CSS3, y",
+    "shortDescription": "Solução site para restaurante.",
+    "icon": "/icons/sistema-de-panaderia-y-pasteleria.svg",
+    "thumbnail": "/thumbnails/sistema-de-panaderia-y-pasteleria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "php",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-panaderia-y-pasteleria",
+    "requestUrl": "/request?app=sistema-de-panaderia-y-pasteleria",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Php",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías de Desarrollo",
+      "Funcionalidades del Sistema",
+      "Requisitos, Instalación y Configuración Local",
+      "Clonar o copiar el proyecto en la carpeta de destino.",
+      "Abrir la terminal (cmd/PowerShell) en la ruta del proyecto.",
+      "Instalar las dependencias de PHP:",
+      "Instalar las dependencias de Node.js:",
+      "Configurar el entorno: Copiar el archivo .env.example y renombrarlo a .env . (Se puede hacer con el"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE PANADERIA Y PASTELERIA — Solução site para restaurante. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE PANADERIA Y PASTELERIA. Documentación Técnica y de Usuario Sistema Integral de Gestión para Panadería y Pastelería 1. Tecnologías de Desarrollo El si",
+    "keywords": [
+      "SISTEMA DE PANADERIA Y PASTELERIA",
+      "Solução site para restaurante.",
+      "site",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-panaderia-y-pasteleria",
+      "site",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-140",
+    "slug": "tpv-estetica-y-spa",
+    "name": "TPV Estética y SPA",
+    "subtitle": "Solução tpv para barbearia.",
+    "description": "TPV Estética y SPA — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução tpv para barbearia.",
+    "icon": "/icons/tpv-estetica-y-spa.svg",
+    "thumbnail": "/thumbnails/tpv-estetica-y-spa.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "barbearia",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-estetica-y-spa",
+    "requestUrl": "/request?app=tpv-estetica-y-spa",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Gestão de vendas",
+      "Controle de estoque",
+      "Multi-usuário",
+      "Relatórios"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Estética y SPA — Solução tpv para barbearia. | NEXO Digital Store",
+    "metaDescription": "TPV Estética y SPA — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "TPV Estética y SPA",
+      "Solução tpv para barbearia.",
+      "tpv",
+      "health",
+      "barbearia",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-estetica-y-spa",
+      "tpv",
+      "health",
+      "barbearia"
+    ]
+  },
+  {
+    "id": "gd-141",
+    "slug": "sistema-minimarket",
+    "name": "SISTEMA MINIMARKET",
+    "subtitle": "Solução site para loja.",
+    "description": "SISTEMA MINIMARKET — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução site para loja.",
+    "icon": "/icons/sistema-minimarket.svg",
+    "thumbnail": "/thumbnails/sistema-minimarket.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-minimarket",
+    "requestUrl": "/request?app=sistema-minimarket",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Design responsivo",
+      "SEO otimizado",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA MINIMARKET — Solução site para loja. | NEXO Digital Store",
+    "metaDescription": "SISTEMA MINIMARKET — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "SISTEMA MINIMARKET",
+      "Solução site para loja.",
+      "site",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-minimarket",
+      "site",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-142",
+    "slug": "tpv-copas",
+    "name": "TPV Copas",
+    "subtitle": "Solução tpv para restaurante.",
+    "description": "TPV Copas. TPV COPAS Sistema de gestión profesional para bares de copas, pubs y discotecas",
+    "shortDescription": "Solução tpv para restaurante.",
+    "icon": "/icons/tpv-copas.svg",
+    "thumbnail": "/thumbnails/tpv-copas.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "tpv",
+    "framework": "nextjs",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/tpv-copas",
+    "requestUrl": "/request?app=tpv-copas",
+    "pricing": "subscription",
+    "price": 79,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard",
+      "Productos",
+      "Categorías",
+      "Promociones",
+      "Clientes",
+      "Reportes",
+      "tablas · InnoDB · utf8mb4",
+      "234 567,89 €"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "TPV Copas — Solução tpv para restaurante. | NEXO Digital Store",
+    "metaDescription": "TPV Copas. TPV COPAS Sistema de gestión profesional para bares de copas, pubs y discotecas",
+    "keywords": [
+      "TPV Copas",
+      "Solução tpv para restaurante.",
+      "tpv",
+      "food",
+      "restaurante",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "tpv-copas",
+      "tpv",
+      "food",
+      "restaurante"
+    ]
+  },
+  {
+    "id": "gd-143",
+    "slug": "sistema-de-inventario-de-equipos-tecnologicos",
+    "name": "SISTEMA DE INVENTARIO DE EQUIPOS TECNOLÓGICOS",
+    "subtitle": "Solução site para escritorio.",
+    "description": "SISTEMA DE INVENTARIO DE EQUIPOS TECNOLÓGICOS — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução site para escritorio.",
+    "icon": "/icons/sistema-de-inventario-de-equipos-tecnologicos.svg",
+    "thumbnail": "/thumbnails/sistema-de-inventario-de-equipos-tecnologicos.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "php",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-inventario-de-equipos-tecnologicos",
+    "requestUrl": "/request?app=sistema-de-inventario-de-equipos-tecnologicos",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Php",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Design responsivo",
+      "SEO otimizado",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE INVENTARIO DE EQUIPOS TECNOLÓGICOS — Solução site para escritorio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE INVENTARIO DE EQUIPOS TECNOLÓGICOS — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "SISTEMA DE INVENTARIO DE EQUIPOS TECNOLÓGICOS",
+      "Solução site para escritorio.",
+      "site",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-inventario-de-equipos-tecnologicos",
+      "site",
+      "finance",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-144",
+    "slug": "sistema-de-salon-de-belleza",
+    "name": "SISTEMA DE SALÓN DE BELLEZA",
+    "subtitle": "Solução site para barbearia.",
+    "description": "SISTEMA DE SALÓN DE BELLEZA. Documentación Técnica – Sistema Salón de Belleza",
+    "shortDescription": "Solução site para barbearia.",
+    "icon": "/icons/sistema-de-salon-de-belleza.svg",
+    "thumbnail": "/thumbnails/sistema-de-salon-de-belleza.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "barbearia",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-salon-de-belleza",
+    "requestUrl": "/request?app=sistema-de-salon-de-belleza",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "Tailwind CSS",
+      "MySQL"
+    ],
+    "features": [
+      "Stack Tecnológico del Sistema",
+      "Funcionalidades del Sistema",
+      "Guía de Instalación Local (Paso a Paso)",
+      "Opciones de Hosting Web Recomendadas",
+      "Despliegue en Railway + Vercel (Guía Completa)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE SALÓN DE BELLEZA — Solução site para barbearia. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE SALÓN DE BELLEZA. Documentación Técnica – Sistema Salón de Belleza",
+    "keywords": [
+      "SISTEMA DE SALÓN DE BELLEZA",
+      "Solução site para barbearia.",
+      "site",
+      "health",
+      "barbearia",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-salon-de-belleza",
+      "site",
+      "health",
+      "barbearia"
+    ]
+  },
+  {
+    "id": "gd-145",
+    "slug": "sistema-de-cotizacion",
+    "name": "SISTEMA DE COTIZACIÓN",
+    "subtitle": "Solução site para escritorio.",
+    "description": "SISTEMA DE COTIZACIÓN. Manual Técnico y de Despliegue Sistema de Cotizaciones y Facturación (CotizaPro)",
+    "shortDescription": "Solução site para escritorio.",
+    "icon": "/icons/sistema-de-cotizacion.svg",
+    "thumbnail": "/thumbnails/sistema-de-cotizacion.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "php",
+    "industry": "finance",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-cotizacion",
+    "requestUrl": "/request?app=sistema-de-cotizacion",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Php",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías del Sistema",
+      "Funcionalidades Principales",
+      "Instalación Local (Paso a Paso)",
+      "Hosting Web Recomendado",
+      "Guía de Despliegue (Hostinger)",
+      "En tu computadora local, ejecuta npm run build.",
+      "Comprime todo el proyecto en un archivo proyecto.zip (excluye node_modules, pero incluye",
+      "En Hostinger, ve a Archivos > Administrador de Archivos."
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE COTIZACIÓN — Solução site para escritorio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE COTIZACIÓN. Manual Técnico y de Despliegue Sistema de Cotizaciones y Facturación (CotizaPro)",
+    "keywords": [
+      "SISTEMA DE COTIZACIÓN",
+      "Solução site para escritorio.",
+      "site",
+      "finance",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-cotizacion",
+      "site",
+      "finance",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-146",
+    "slug": "sistema-de-laboratorio-clinico",
+    "name": "SISTEMA DE LABORATORIO CLÍNICO",
+    "subtitle": "Solução site para clinica.",
+    "description": "SISTEMA DE LABORATORIO CLÍNICO. LabSalud MANUAL DE IMPLEMENTACIÓN Y USUARIO Fecha de generación: 20/04/2026",
+    "shortDescription": "Solução site para clinica.",
+    "icon": "/icons/sistema-de-laboratorio-clinico.svg",
+    "thumbnail": "/thumbnails/sistema-de-laboratorio-clinico.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "php",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-laboratorio-clinico",
+    "requestUrl": "/request?app=sistema-de-laboratorio-clinico",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Php",
+      "React",
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías de Desarrollo",
+      "Funcionalidades del Sistema",
+      "Instalación en Computadora Nueva",
+      "Hosting y Despliegue Web",
+      "Preparación del Servidor",
+      "Gestión de Código",
+      "Configuración de Producción",
+      "Optimización"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE LABORATORIO CLÍNICO — Solução site para clinica. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE LABORATORIO CLÍNICO. LabSalud MANUAL DE IMPLEMENTACIÓN Y USUARIO Fecha de generación: 20/04/2026",
+    "keywords": [
+      "SISTEMA DE LABORATORIO CLÍNICO",
+      "Solução site para clinica.",
+      "site",
+      "health",
+      "clinica",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-laboratorio-clinico",
+      "site",
+      "health",
+      "clinica"
+    ]
+  },
+  {
+    "id": "gd-147",
+    "slug": "sistema-de-parqueo-y-estacionamiento",
+    "name": "SISTEMA DE PARQUEO Y ESTACIONAMIENTO",
+    "subtitle": "Solução site para escritorio.",
+    "description": "SISTEMA DE PARQUEO Y ESTACIONAMIENTO. Manual de Sistema: ParkSmart Pro 1. Tecnologías de Desarrollo El sistema ha sido desarrollado utilizando un stack web moderno y robusto (MERN/PERN adaptado a MySQL): Frontend (Interfaz de Usuario): React 19: Biblioteca principal para construir la interfaz. Vite: Herramienta de compilación ultrarrápida. Tailwind CSS: Framework de diseño para estilos modernos y responsivos. Lucide React & Recharts: ",
+    "shortDescription": "Solução site para escritorio.",
+    "icon": "/icons/sistema-de-parqueo-y-estacionamiento.svg",
+    "thumbnail": "/thumbnails/sistema-de-parqueo-y-estacionamiento.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "escritorio",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-parqueo-y-estacionamiento",
+    "requestUrl": "/request?app=sistema-de-parqueo-y-estacionamiento",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "PHP",
+      "Tailwind CSS",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologías de Desarrollo",
+      "Funcionalidades del Sistema",
+      "Autenticación y Seguridad: Login seguro con roles jerárquicos (Administrador, Operador, Cajero).",
+      "Control de Flujo de Vehículos: Registro de entrada y salida con asignación de espacios, lector de placa y",
+      "Mapa del Parqueo en Tiempo Real: Vista gráfica para ver qué espacios están libres, ocupados o reservados",
+      "Tarifas Dinámicas: Configuración de precios por hora, por fracción o tarifas planas, dependiente del tipo de",
+      "Gestión de Clientes Abonados: Control para clientes frecuentes con pago de membresía mensual y acceso",
+      "Módulo de Caja y Facturación: Cobros en diferentes métodos (efectivo, tarjeta, QR), emisión de tickets y"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE PARQUEO Y ESTACIONAMIENTO — Solução site para escritorio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE PARQUEO Y ESTACIONAMIENTO. Manual de Sistema: ParkSmart Pro 1. Tecnologías de Desarrollo El sistema ha sido desarrollado utilizando un stack web mode",
+    "keywords": [
+      "SISTEMA DE PARQUEO Y ESTACIONAMIENTO",
+      "Solução site para escritorio.",
+      "site",
+      "other",
+      "escritorio",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-parqueo-y-estacionamiento",
+      "site",
+      "other",
+      "escritorio"
+    ]
+  },
+  {
+    "id": "gd-148",
+    "slug": "sistema-de-ferreteria",
+    "name": "SISTEMA DE FERRETERIA",
+    "subtitle": "Solução site para loja.",
+    "description": "SISTEMA DE FERRETERIA. Sistema de Gestion para Ferreteria Punto de Venta - Inventario - Reportes",
+    "shortDescription": "Solução site para loja.",
+    "icon": "/icons/sistema-de-ferreteria.svg",
+    "thumbnail": "/thumbnails/sistema-de-ferreteria.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-ferreteria",
+    "requestUrl": "/request?app=sistema-de-ferreteria",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "MySQL"
+    ],
+    "features": [
+      "Tecnologia del sistema",
+      "Funcionalidades del sistema",
+      "Instalacion en una computadora nueva",
+      "Hosting web sugerido",
+      "Como subir la app a Railway (paso a paso)"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE FERRETERIA — Solução site para loja. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE FERRETERIA. Sistema de Gestion para Ferreteria Punto de Venta - Inventario - Reportes",
+    "keywords": [
+      "SISTEMA DE FERRETERIA",
+      "Solução site para loja.",
+      "site",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-ferreteria",
+      "site",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "gd-149",
+    "slug": "erp-taller-automotriz",
+    "name": "ERP_TALLER_AUTOMOTRIZ",
+    "subtitle": "Solução saas para seu negócio.",
+    "description": "ERP_TALLER_AUTOMOTRIZ. Manual Técnico - AutoTaller ERP",
+    "shortDescription": "Solução saas para seu negócio.",
+    "icon": "/icons/erp-taller-automotriz.svg",
+    "thumbnail": "/thumbnails/erp-taller-automotriz.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "construction",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/erp-taller-automotriz",
+    "requestUrl": "/request?app=erp-taller-automotriz",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Especificaciones",
+      "Instalación",
+      "SDK de .NET 8.0: Descargar desde Microsoft .NET.",
+      "SQL Server 2022 (Developer o Express): Descargar desde la página oficial",
+      "SQL Server Management Studio (SSMS): Para visualización de la base de",
+      "Visual Studio 2022 o VS Code: Entorno de desarrollo (IDE).",
+      "Despliegue en la Recomendaciones de"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "ERP_TALLER_AUTOMOTRIZ — Solução saas para seu negócio. | NEXO Digital Store",
+    "metaDescription": "ERP_TALLER_AUTOMOTRIZ. Manual Técnico - AutoTaller ERP",
+    "keywords": [
+      "ERP_TALLER_AUTOMOTRIZ",
+      "Solução saas para seu negócio.",
+      "saas",
+      "construction",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "erp-taller-automotriz",
+      "saas",
+      "construction",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-150",
+    "slug": "erp-educativo",
+    "name": "ERP_EDUCATIVO",
+    "subtitle": "Solução saas para seu negócio.",
+    "description": "ERP_EDUCATIVO. ERP EDUCATIVO Sistema de Gestion Integral para Institutos, Academias y Universidades",
+    "shortDescription": "Solução saas para seu negócio.",
+    "icon": "/icons/erp-educativo.svg",
+    "thumbnail": "/thumbnails/erp-educativo.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/erp-educativo",
+    "requestUrl": "/request?app=erp-educativo",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Tecnologia y arquitectura",
+      "Funcionalidades - los 20 modulos",
+      "Configuracion general",
+      "Usuarios y seguridad",
+      "Gestion academica",
+      "Admision y matricula",
+      "Gestion de estudiantes",
+      "Gestion de docentes"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "ERP_EDUCATIVO — Solução saas para seu negócio. | NEXO Digital Store",
+    "metaDescription": "ERP_EDUCATIVO. ERP EDUCATIVO Sistema de Gestion Integral para Institutos, Academias y Universidades",
+    "keywords": [
+      "ERP_EDUCATIVO",
+      "Solução saas para seu negócio.",
+      "saas",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "erp-educativo",
+      "saas",
+      "other",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-151",
+    "slug": "crm-agencia-viajes",
+    "name": "CRM_AGENCIA_VIAJES",
+    "subtitle": "Solução saas para seu negócio.",
+    "description": "CRM_AGENCIA_VIAJES. Viaje 360 CRM Manual Técnico y Guía de Implementación Sistema ERP para Agencia de Viajes · Versión 1.0 · 2026",
+    "shortDescription": "Solução saas para seu negócio.",
+    "icon": "/icons/crm-agencia-viajes.svg",
+    "thumbnail": "/thumbnails/crm-agencia-viajes.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/crm-agencia-viajes",
+    "requestUrl": "/request?app=crm-agencia-viajes",
+    "pricing": "subscription",
+    "price": 49,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "PHP",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard web",
+      "Gestão centralizada",
+      "Relatórios",
+      "Multi-usuário"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "CRM_AGENCIA_VIAJES — Solução saas para seu negócio. | NEXO Digital Store",
+    "metaDescription": "CRM_AGENCIA_VIAJES. Viaje 360 CRM Manual Técnico y Guía de Implementación Sistema ERP para Agencia de Viajes · Versión 1.0 · 2026",
+    "keywords": [
+      "CRM_AGENCIA_VIAJES",
+      "Solução saas para seu negócio.",
+      "saas",
+      "other",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "crm-agencia-viajes",
+      "saas",
+      "other",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-152",
+    "slug": "sistema-de-gestion-academica",
+    "name": "SISTEMA DE GESTIÓN ACADÉMICA",
+    "subtitle": "Solução site para seu negócio.",
+    "description": "SISTEMA DE GESTIÓN ACADÉMICA — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução site para seu negócio.",
+    "icon": "/icons/sistema-de-gestion-academica.svg",
+    "thumbnail": "/thumbnails/sistema-de-gestion-academica.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "education",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-gestion-academica",
+    "requestUrl": "/request?app=sistema-de-gestion-academica",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Design responsivo",
+      "SEO otimizado",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE GESTIÓN ACADÉMICA — Solução site para seu negócio. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE GESTIÓN ACADÉMICA — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "SISTEMA DE GESTIÓN ACADÉMICA",
+      "Solução site para seu negócio.",
+      "site",
+      "education",
+      "outro",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-gestion-academica",
+      "site",
+      "education",
+      "outro"
+    ]
+  },
+  {
+    "id": "gd-153",
+    "slug": "sistema-de-boutique",
+    "name": "SISTEMA DE BOUTIQUE",
+    "subtitle": "Solução site para loja.",
+    "description": "SISTEMA DE BOUTIQUE — Solução profissional da NEXO Digital para o seu negócio.",
+    "shortDescription": "Solução site para loja.",
+    "icon": "/icons/sistema-de-boutique.svg",
+    "thumbnail": "/thumbnails/sistema-de-boutique.jpg",
+    "screenshots": [
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg",
+      "/screenshot-placeholder.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2025-01-15",
+    "lastUpdate": "2026-06-12",
+    "hasDemo": true,
+    "demoUrl": "/demo/sistema-de-boutique",
+    "requestUrl": "/request?app=sistema-de-boutique",
+    "pricing": "fixed",
+    "price": 299,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 9,
+    "downloadCount": 120,
+    "developer": "NEXO Digital S.L.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Design responsivo",
+      "SEO otimizado",
+      "Fácil instalação",
+      "Personalizável"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SISTEMA DE BOUTIQUE — Solução site para loja. | NEXO Digital Store",
+    "metaDescription": "SISTEMA DE BOUTIQUE — Solução profissional da NEXO Digital para o seu negócio.",
+    "keywords": [
+      "SISTEMA DE BOUTIQUE",
+      "Solução site para loja.",
+      "site",
+      "retail",
+      "loja",
+      "NEXO",
+      "app",
+      "negocio"
+    ],
+    "tags": [
+      "sistema-de-boutique",
+      "site",
+      "retail",
+      "loja"
+    ]
+  },
+  {
+    "id": "tpl-clinica-dental",
+    "slug": "clinica-dental-sorriso-template",
+    "name": "Clínica Dental Sorriso",
+    "subtitle": "Clínicas dentárias",
+    "description": "Landing page premium para clínicas dentárias com agendamento, serviços, depoimentos e contato.",
+    "shortDescription": "Landing page premium para clínicas dentárias com agendamento, serviços, depoimentos e contato.",
+    "icon": "/thumbnails/clinica-dental-sorriso.jpg",
+    "thumbnail": "/thumbnails/clinica-dental-sorriso.jpg",
+    "screenshots": [
+      "/thumbnails/clinica-dental-sorriso.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "health",
+    "sense": "clinica",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2026-05-10",
+    "lastUpdate": "2026-06-15",
+    "hasDemo": true,
+    "demoUrl": "/preview/preview-clinica-dental-sorriso",
+    "requestUrl": "/request?template=clinica-dental-sorriso-template",
+    "pricing": "fixed",
+    "price": 0,
+    "currency": "EUR",
+    "rating": 4.7,
+    "reviewCount": 0,
+    "downloadCount": 142,
+    "developer": "nexo-templates",
+    "techStack": [
+      "nextjs",
+      "tailwind"
+    ],
+    "features": [
+      "Hero com CTA",
+      "Seção de serviços",
+      "Agendamento",
+      "Depoimentos",
+      "Formulário de contato"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "Clínica Dental Sorriso — Template | NEXO Store",
+    "metaDescription": "Landing page premium para clínicas dentárias com agendamento, serviços, depoimentos e contato.",
+    "keywords": [
+      "Clínica Dental Sorriso",
+      "clínica dental",
+      "dentista",
+      "landing page saúde",
+      "business",
+      "clinic"
+    ],
+    "tags": [
+      "clinica dental",
+      "saude",
+      "landing page",
+      "agendamento"
+    ],
+    "category": "business",
+    "subcategory": "clinic",
+    "stack": "nextjs-tailwind",
+    "source": "manual",
+    "html": "<!-- LP Template: Clinica Dental Sorriso -->",
+    "css": "/* tailwind custom css */",
+    "js": "// interactivity",
+    "virtualPrice": {
+      "stars": 120,
+      "suns": 0,
+      "moons": 0
+    },
+    "originalVirtualPrice": {
+      "stars": 150,
+      "suns": 0,
+      "moons": 0
+    },
+    "publicPreviewToken": "preview-clinica-dental-sorriso",
+    "metadata": {
+      "niche": "clinica dental",
+      "audience": "clínicas dentárias",
+      "difficulty": "beginner",
+      "style": "clean",
+      "colors": [
+        "#FFFFFF",
+        "#3B82F6",
+        "#10B981"
+      ],
+      "features": [
+        "Hero com CTA",
+        "Seção de serviços",
+        "Agendamento",
+        "Depoimentos",
+        "Formulário de contato"
+      ],
+      "useCases": [
+        "Clínicas dentárias",
+        "Consultórios médicos"
+      ],
+      "seoKeywords": [
+        "clínica dental",
+        "dentista",
+        "landing page saúde"
+      ]
+    }
+  },
+  {
+    "id": "tpl-restaurante-moderno",
+    "slug": "restaurante-moderno-template",
+    "name": "Restaurante Moderno",
+    "subtitle": "Restaurantes",
+    "description": "Site elegante para restaurantes com cardápio digital, reservas e galeria de pratos.",
+    "shortDescription": "Site elegante para restaurantes com cardápio digital, reservas e galeria de pratos.",
+    "icon": "/thumbnails/restaurante-moderno.jpg",
+    "thumbnail": "/thumbnails/restaurante-moderno.jpg",
+    "screenshots": [
+      "/thumbnails/restaurante-moderno.jpg"
+    ],
+    "type": "site",
+    "framework": "react",
+    "industry": "food",
+    "sense": "restaurante",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2026-04-22",
+    "lastUpdate": "2026-06-10",
+    "hasDemo": true,
+    "demoUrl": "/preview/preview-restaurante-moderno",
+    "requestUrl": "/request?template=restaurante-moderno-template",
+    "pricing": "fixed",
+    "price": 0,
+    "currency": "EUR",
+    "rating": 4.5,
+    "reviewCount": 0,
+    "downloadCount": 89,
+    "developer": "community-chef",
+    "techStack": [
+      "react",
+      "tailwind"
+    ],
+    "features": [
+      "Cardápio digital",
+      "Reservas",
+      "Galeria",
+      "Depoimentos"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "Restaurante Moderno — Template | NEXO Store",
+    "metaDescription": "Site elegante para restaurantes com cardápio digital, reservas e galeria de pratos.",
+    "keywords": [
+      "Restaurante Moderno",
+      "restaurante",
+      "cardápio digital",
+      "reservas",
+      "business",
+      "restaurant"
+    ],
+    "tags": [
+      "restaurante",
+      "comida",
+      "cardapio",
+      "reservas"
+    ],
+    "category": "business",
+    "subcategory": "restaurant",
+    "stack": "react-tailwind",
+    "source": "generated",
+    "html": "<!-- LP Template: Restaurante Moderno -->",
+    "virtualPrice": {
+      "stars": 100,
+      "suns": 0,
+      "moons": 0
+    },
+    "publicPreviewToken": "preview-restaurante-moderno",
+    "metadata": {
+      "niche": "restaurante",
+      "audience": "restaurantes e bares",
+      "difficulty": "intermediate",
+      "style": "elegant",
+      "colors": [
+        "#1F2937",
+        "#F59E0B",
+        "#FFFFFF"
+      ],
+      "features": [
+        "Cardápio digital",
+        "Reservas",
+        "Galeria",
+        "Depoimentos"
+      ],
+      "useCases": [
+        "Restaurantes",
+        "Bares",
+        "Cafeterias"
+      ],
+      "seoKeywords": [
+        "restaurante",
+        "cardápio digital",
+        "reservas"
+      ]
+    }
+  },
+  {
+    "id": "tpl-saas-dashboard",
+    "slug": "saas-dashboard-starter-template",
+    "name": "SaaS Dashboard Starter",
+    "subtitle": "Startups SaaS",
+    "description": "Dashboard SaaS completo com autenticação, sidebar, tabelas, charts e dark mode.",
+    "shortDescription": "Dashboard SaaS completo com autenticação, sidebar, tabelas, charts e dark mode.",
+    "icon": "/thumbnails/saas-dashboard-starter.jpg",
+    "thumbnail": "/thumbnails/saas-dashboard-starter.jpg",
+    "screenshots": [
+      "/thumbnails/saas-dashboard-starter.jpg"
+    ],
+    "type": "saas",
+    "framework": "nextjs",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2026-03-05",
+    "lastUpdate": "2026-06-18",
+    "hasDemo": true,
+    "demoUrl": "/preview/preview-saas-dashboard-starter",
+    "requestUrl": "/request?template=saas-dashboard-starter-template",
+    "pricing": "fixed",
+    "price": 0,
+    "currency": "EUR",
+    "rating": 4.9,
+    "reviewCount": 0,
+    "downloadCount": 320,
+    "developer": "nexo-templates",
+    "techStack": [
+      "nextjs",
+      "tailwind"
+    ],
+    "features": [
+      "Autenticação",
+      "Sidebar",
+      "Tabelas",
+      "Charts",
+      "Dark mode"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "SaaS Dashboard Starter — Template | NEXO Store",
+    "metaDescription": "Dashboard SaaS completo com autenticação, sidebar, tabelas, charts e dark mode.",
+    "keywords": [
+      "SaaS Dashboard Starter",
+      "saas",
+      "dashboard",
+      "nextjs",
+      "tailwind"
+    ],
+    "tags": [
+      "saas",
+      "dashboard",
+      "startup",
+      "admin"
+    ],
+    "category": "saas",
+    "subcategory": "dashboard",
+    "stack": "nextjs-tailwind",
+    "source": "manual",
+    "html": "<!-- LP Template: SaaS Dashboard -->",
+    "virtualPrice": {
+      "stars": 250,
+      "suns": 10,
+      "moons": 0
+    },
+    "publicPreviewToken": "preview-saas-dashboard-starter",
+    "metadata": {
+      "niche": "saas dashboard",
+      "audience": "startups e SaaS",
+      "difficulty": "advanced",
+      "style": "modern",
+      "colors": [
+        "#0F172A",
+        "#3B82F6",
+        "#FFFFFF"
+      ],
+      "features": [
+        "Autenticação",
+        "Sidebar",
+        "Tabelas",
+        "Charts",
+        "Dark mode"
+      ],
+      "useCases": [
+        "Startups SaaS",
+        "Painéis administrativos"
+      ],
+      "seoKeywords": [
+        "saas",
+        "dashboard",
+        "nextjs",
+        "tailwind"
+      ]
+    }
+  },
+  {
+    "id": "tpl-loja-sustentavel",
+    "slug": "loja-sustentavel-template",
+    "name": "Loja Sustentável",
+    "subtitle": "Moda sustentável",
+    "description": "E-commerce minimalista para marcas sustentáveis com catálogo, carrinho e checkout.",
+    "shortDescription": "E-commerce minimalista para marcas sustentáveis com catálogo, carrinho e checkout.",
+    "icon": "/thumbnails/loja-sustentavel.jpg",
+    "thumbnail": "/thumbnails/loja-sustentavel.jpg",
+    "screenshots": [
+      "/thumbnails/loja-sustentavel.jpg"
+    ],
+    "type": "site",
+    "framework": "nextjs",
+    "industry": "retail",
+    "sense": "loja",
+    "status": "coming_soon",
+    "version": "1.0.0",
+    "releaseDate": "2026-06-01",
+    "lastUpdate": "2026-06-20",
+    "hasDemo": false,
+    "demoUrl": "/demo/loja-sustentavel-template",
+    "requestUrl": "/request?template=loja-sustentavel-template",
+    "pricing": "fixed",
+    "price": 0,
+    "currency": "EUR",
+    "rating": 4.6,
+    "reviewCount": 0,
+    "downloadCount": 76,
+    "developer": "eco-designer",
+    "techStack": [
+      "nextjs",
+      "shopify"
+    ],
+    "features": [
+      "Catálogo",
+      "Carrinho",
+      "Checkout",
+      "Filtros"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "Loja Sustentável — Template | NEXO Store",
+    "metaDescription": "E-commerce minimalista para marcas sustentáveis com catálogo, carrinho e checkout.",
+    "keywords": [
+      "Loja Sustentável",
+      "ecommerce",
+      "loja sustentável",
+      "shopify",
+      "store"
+    ],
+    "tags": [
+      "ecommerce",
+      "loja",
+      "sustentavel",
+      "moda"
+    ],
+    "category": "ecommerce",
+    "subcategory": "store",
+    "stack": "nextjs-shopify",
+    "source": "generated",
+    "html": "<!-- LP Template: Loja Sustentavel -->",
+    "virtualPrice": {
+      "stars": 180,
+      "suns": 0,
+      "moons": 0
+    },
+    "metadata": {
+      "niche": "ecommerce sustentável",
+      "audience": "marcas eco-friendly",
+      "difficulty": "intermediate",
+      "style": "minimal",
+      "colors": [
+        "#F0FDF4",
+        "#166534",
+        "#FFFFFF"
+      ],
+      "features": [
+        "Catálogo",
+        "Carrinho",
+        "Checkout",
+        "Filtros"
+      ],
+      "useCases": [
+        "Moda sustentável",
+        "Produtos naturais"
+      ],
+      "seoKeywords": [
+        "ecommerce",
+        "loja sustentável",
+        "shopify"
+      ]
+    }
+  },
+  {
+    "id": "tpl-portfolio-fotografo",
+    "slug": "portfolio-fotografo-template",
+    "name": "Portfolio Fotógrafo",
+    "subtitle": "Fotógrafos",
+    "description": "Portfolio visual para fotógrafos com galeria em masonry, sobre e formulário de contato.",
+    "shortDescription": "Portfolio visual para fotógrafos com galeria em masonry, sobre e formulário de contato.",
+    "icon": "/thumbnails/portfolio-fotografo.jpg",
+    "thumbnail": "/thumbnails/portfolio-fotografo.jpg",
+    "screenshots": [
+      "/thumbnails/portfolio-fotografo.jpg"
+    ],
+    "type": "site",
+    "framework": "react",
+    "industry": "other",
+    "sense": "outro",
+    "status": "available",
+    "version": "1.0.0",
+    "releaseDate": "2026-02-14",
+    "lastUpdate": "2026-05-30",
+    "hasDemo": true,
+    "demoUrl": "/preview/preview-portfolio-fotografo",
+    "requestUrl": "/request?template=portfolio-fotografo-template",
+    "pricing": "fixed",
+    "price": 0,
+    "currency": "EUR",
+    "rating": 4.8,
+    "reviewCount": 0,
+    "downloadCount": 210,
+    "developer": "creative-studio",
+    "techStack": [
+      "react",
+      "tailwind"
+    ],
+    "features": [
+      "Galeria masonry",
+      "Sobre",
+      "Contato",
+      "Lightbox"
+    ],
+    "requirements": [
+      "Navegador moderno",
+      "Conexão internet"
+    ],
+    "metaTitle": "Portfolio Fotógrafo — Template | NEXO Store",
+    "metaDescription": "Portfolio visual para fotógrafos com galeria em masonry, sobre e formulário de contato.",
+    "keywords": [
+      "Portfolio Fotógrafo",
+      "portfolio",
+      "fotógrafo",
+      "galeria",
+      "photographer"
+    ],
+    "tags": [
+      "portfolio",
+      "fotografo",
+      "galeria",
+      "criativo"
+    ],
+    "category": "portfolio",
+    "subcategory": "photographer",
+    "stack": "react-tailwind",
+    "source": "manual",
+    "html": "<!-- LP Template: Portfolio Fotografo -->",
+    "virtualPrice": {
+      "stars": 80,
+      "suns": 0,
+      "moons": 0
+    },
+    "publicPreviewToken": "preview-portfolio-fotografo",
+    "metadata": {
+      "niche": "portfolio fotográfico",
+      "audience": "fotógrafos e criativos",
+      "difficulty": "beginner",
+      "style": "visual",
+      "colors": [
+        "#000000",
+        "#FFFFFF",
+        "#F59E0B"
+      ],
+      "features": [
+        "Galeria masonry",
+        "Sobre",
+        "Contato",
+        "Lightbox"
+      ],
+      "useCases": [
+        "Fotógrafos",
+        "Artistas visuais"
+      ],
+      "seoKeywords": [
+        "portfolio",
+        "fotógrafo",
+        "galeria"
+      ]
+    }
+  }
+]
