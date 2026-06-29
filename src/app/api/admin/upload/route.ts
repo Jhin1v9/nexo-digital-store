@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { writeFileSync, mkdirSync } from "fs";
-import { join } from "path";
+import { join, extname } from "path";
 
 function unauthorized() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -18,6 +18,7 @@ export async function POST(req: NextRequest) {
     const form = await req.formData();
     const file = form.get("file") as File | null;
     const slug = form.get("slug") as string | null;
+    const folder = (form.get("folder") as string | null) || "thumbnails";
 
     if (!file || !slug) {
       return NextResponse.json({ error: "Missing file or slug" }, { status: 400 });
@@ -30,19 +31,23 @@ export async function POST(req: NextRequest) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    const thumbsDir = join(process.cwd(), "public", "thumbnails");
-    const sourcesDir = join(thumbsDir, "_sources");
-    mkdirSync(thumbsDir, { recursive: true });
+    const targetDir = join(process.cwd(), "public", folder);
+    const sourcesDir = join(process.cwd(), "public", "thumbnails", "_sources");
+    mkdirSync(targetDir, { recursive: true });
     mkdirSync(sourcesDir, { recursive: true });
 
-    const filename = `${slug}.jpg`;
-    const destPath = join(thumbsDir, filename);
-    const sourcePath = join(sourcesDir, filename);
+    const originalExt = extname(file.name) || ".jpg";
+    const filename = `${slug}${originalExt}`;
+    const destPath = join(targetDir, filename);
 
     writeFileSync(destPath, buffer);
-    writeFileSync(sourcePath, buffer);
 
-    return NextResponse.json({ path: `/thumbnails/${filename}` });
+    // Keep a source copy for thumbnails only
+    if (folder === "thumbnails") {
+      writeFileSync(join(sourcesDir, filename), buffer);
+    }
+
+    return NextResponse.json({ path: `/${folder}/${filename}` });
   } catch (err) {
     return NextResponse.json({ error: "Upload failed" }, { status: 500 });
   }

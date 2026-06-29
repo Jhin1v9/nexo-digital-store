@@ -222,13 +222,15 @@ export default function AdminPage() {
     }
   }
 
-  async function uploadImage(file: File, slug: string, field: "thumbnail") {
+  async function uploadImage(file: File, slug: string, field: "thumbnail" | "icon") {
     setUploading(true);
     try {
-      const filename = field === "thumbnail" ? slug : `${slug}-${field}`;
+      const folder = field === "thumbnail" ? "thumbnails" : "icons";
+      const filename = field === "thumbnail" ? slug : `${slug}-icon`;
       const fd = new FormData();
       fd.append("file", file);
       fd.append("slug", filename);
+      fd.append("folder", folder);
       const res = await fetch("/api/admin/upload/", {
         method: "POST",
         headers: { "x-admin-key": key },
@@ -236,8 +238,8 @@ export default function AdminPage() {
       });
       const data = await res.json();
       if (res.ok) {
-        setForm((f) => ({ ...f, thumbnail: data.path }));
-        showMessage("success", "Thumbnail enviada");
+        setForm((f) => ({ ...f, [field]: data.path }));
+        showMessage("success", field === "thumbnail" ? "Thumbnail enviada" : "Ícone enviado");
       } else {
         showMessage("error", data.error || "Erro no upload");
       }
@@ -256,6 +258,7 @@ export default function AdminPage() {
         const fd = new FormData();
         fd.append("file", files[i]);
         fd.append("slug", `${slug}-screenshot-${Date.now()}-${i + 1}`);
+        fd.append("folder", "thumbnails");
         const res = await fetch("/api/admin/upload/", {
           method: "POST",
           headers: { "x-admin-key": key },
@@ -483,7 +486,26 @@ export default function AdminPage() {
                       </div>
                     </div>
 
-                    <Field label="URL do ícone" value={form.icon} onChange={(v) => setForm({ ...form, icon: v })} />
+                    <div className="space-y-3">
+                      <label className="block text-xs font-semibold text-text-secondary">Ícone</label>
+                      <div className="flex flex-col sm:flex-row items-start gap-4">
+                        <div className="w-20 h-20 rounded-2xl bg-surface overflow-hidden border border-border-default shadow-sm flex items-center justify-center">
+                          {form.icon ? (
+                            <img src={form.icon} alt="" className="w-full h-full object-cover" />
+                          ) : (
+                            <span className="text-2xl font-bold text-primary/30">?</span>
+                          )}
+                        </div>
+                        <div className="space-y-3 w-full sm:w-auto">
+                          <label className="inline-flex items-center gap-2 h-11 px-5 rounded-xl bg-primary text-on-primary text-sm font-semibold hover:bg-primary-hover transition-colors cursor-pointer shadow-sm">
+                            <Upload className="w-4 h-4" /> {uploading ? "Enviando..." : "Enviar ícone"}
+                            <input type="file" accept="image/*" className="hidden" onChange={(e) => { const file = e.target.files?.[0]; if (file && form.slug) uploadImage(file, form.slug, "icon"); }} disabled={uploading || !form.slug} />
+                          </label>
+                          {!form.slug && <p className="text-xs text-text-muted">Preencha o slug antes de enviar.</p>}
+                          <Field label="Ou URL do ícone" value={form.icon} onChange={(v) => setForm({ ...form, icon: v })} />
+                        </div>
+                      </div>
+                    </div>
 
                     <div className="space-y-3">
                       <label className="block text-xs font-semibold text-text-secondary">Screenshots</label>
