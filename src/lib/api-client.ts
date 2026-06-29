@@ -126,9 +126,41 @@ import { ContactFormInput, ReviewFormInput } from "@/lib/validators";
 
 const MOCK_DELAY = 300;
 
+function isClient() {
+  return typeof window !== "undefined";
+}
+
+function buildQueryString(filters?: Record<string, string | number | undefined>): string {
+  const params = new URLSearchParams();
+  if (!filters) return "";
+  Object.entries(filters).forEach(([key, value]) => {
+    if (value !== undefined && value !== "" && value !== "all") {
+      params.set(key, String(value));
+    }
+  });
+  const qs = params.toString();
+  return qs ? `?${qs}` : "";
+}
+
+async function fetchApps(endpoint: string): Promise<PaginatedApps> {
+  const res = await fetch(endpoint, { headers: { Accept: "application/json" } });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return (await res.json()) as PaginatedApps;
+}
+
+async function fetchAppBySlug(slug: string): Promise<AppProduct | null> {
+  const res = await fetch(`/api/app/${slug}/`, { headers: { Accept: "application/json" } });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return (await res.json()) as AppProduct;
+}
+
 export const mockApi = {
   // Apps / Templates (unified)
   getApps: async (filters?: AppFilter & { page?: number; limit?: string }): Promise<PaginatedApps> => {
+    if (isClient()) {
+      return fetchApps(`/api/apps/${buildQueryString(filters as Record<string, string | number | undefined>)}`);
+    }
     await new Promise((r) => setTimeout(r, MOCK_DELAY));
     let apps = [...mockApps];
 
@@ -177,6 +209,9 @@ export const mockApi = {
   },
 
   getTemplates: async (filters?: Omit<AppFilter, "type"> & { page?: number; limit?: string }): Promise<PaginatedApps> => {
+    if (isClient()) {
+      return fetchApps(`/api/apps/${buildQueryString({ ...filters, source: filters?.source ?? "manual" })}`);
+    }
     await new Promise((r) => setTimeout(r, MOCK_DELAY));
     let templates = mockApps.filter((a) => a.source === "manual" || a.source === "generated" || a.source === "mined");
 
@@ -217,6 +252,9 @@ export const mockApi = {
   },
 
   getApp: async (slug: string): Promise<AppProduct | null> => {
+    if (isClient()) {
+      return fetchAppBySlug(slug);
+    }
     await new Promise((r) => setTimeout(r, MOCK_DELAY));
     return getAppBySlug(slug) ?? null;
   },
