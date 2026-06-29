@@ -1152,7 +1152,30 @@ const driveApps: AppProduct[] = [
 // ===== LP Creator templates (unified as AppProduct) =====
 const mockTemplateProducts: AppProduct[] = adaptLPCTemplates(mockLPCTemplates);
 
-export const mockApps: AppProduct[] = getDataApps();
+// Dynamic proxy so mutations done via the admin panel (add/update/delete)
+// are immediately visible to every consumer without a rebuild/restart.
+const appsProxy = new Proxy([] as AppProduct[], {
+  get(_target, prop) {
+    const apps = getDataApps();
+    if (prop === "length") return apps.length;
+    if (prop === Symbol.iterator) return apps[Symbol.iterator].bind(apps);
+    if (prop === Symbol.toStringTag) return "Array";
+    const value = (apps as any)[prop];
+    if (typeof value === "function") return value.bind(apps);
+    return value;
+  },
+  has(_target, prop) {
+    return prop in getDataApps();
+  },
+  ownKeys() {
+    return Reflect.ownKeys(getDataApps());
+  },
+  getOwnPropertyDescriptor(_target, prop) {
+    return Reflect.getOwnPropertyDescriptor(getDataApps(), prop);
+  },
+});
+
+export const mockApps: AppProduct[] = appsProxy;
 
 const lpCategories = new Set([
   "business",
