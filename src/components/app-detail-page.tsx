@@ -178,8 +178,14 @@ export function AppDetailPageClient({ slug }: { slug: string }) {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="flex gap-4 sm:gap-6"
         >
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl sm:rounded-3xl bg-surface-secondary border border-border-default flex items-center justify-center shrink-0">
-            <span className="text-3xl sm:text-4xl font-bold text-primary/25">{app.name.charAt(0)}</span>
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl sm:rounded-3xl bg-surface-secondary border border-border-default overflow-hidden shrink-0">
+            {app.icon ? (
+              <img src={app.icon} alt={app.name} className="w-full h-full object-cover" />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <span className="text-3xl sm:text-4xl font-bold text-primary/25">{app.name.charAt(0)}</span>
+              </div>
+            )}
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 flex-wrap">

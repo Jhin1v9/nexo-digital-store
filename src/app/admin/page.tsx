@@ -226,7 +226,7 @@ export default function AdminPage() {
     setUploading(true);
     try {
       const folder = field === "thumbnail" ? "thumbnails" : "icons";
-      const filename = field === "thumbnail" ? slug : `${slug}-icon`;
+      const filename = slug;
       const fd = new FormData();
       fd.append("file", file);
       fd.append("slug", filename);

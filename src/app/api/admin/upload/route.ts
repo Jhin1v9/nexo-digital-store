@@ -31,20 +31,33 @@ export async function POST(req: NextRequest) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    const targetDir = join(process.cwd(), "public", folder);
-    const sourcesDir = join(process.cwd(), "public", "thumbnails", "_sources");
-    mkdirSync(targetDir, { recursive: true });
-    mkdirSync(sourcesDir, { recursive: true });
-
     const originalExt = extname(file.name) || ".jpg";
     const filename = `${slug}${originalExt}`;
-    const destPath = join(targetDir, filename);
 
-    writeFileSync(destPath, buffer);
+    // In standalone mode Next.js serves files from process.cwd()/public,
+    // which is .next/standalone/public. We also persist to the project root
+    // so files survive the next build.
+    const runtimeDir = join(process.cwd(), "public", folder);
+    const isStandalone = runtimeDir.includes(join(".next", "standalone", "public"));
+    const projectDir = isStandalone
+      ? join(process.cwd(), "..", "..")
+      : process.cwd();
+    const projectTargetDir = join(projectDir, "public", folder);
+    const projectSourcesDir = join(projectDir, "public", "thumbnails", "_sources");
+
+    mkdirSync(runtimeDir, { recursive: true });
+    mkdirSync(projectTargetDir, { recursive: true });
+    mkdirSync(projectSourcesDir, { recursive: true });
+
+    writeFileSync(join(runtimeDir, filename), buffer);
+    writeFileSync(join(projectTargetDir, filename), buffer);
 
     // Keep a source copy for thumbnails only
     if (folder === "thumbnails") {
-      writeFileSync(join(sourcesDir, filename), buffer);
+      const runtimeSourcesDir = join(process.cwd(), "public", "thumbnails", "_sources");
+      mkdirSync(runtimeSourcesDir, { recursive: true });
+      writeFileSync(join(runtimeSourcesDir, filename), buffer);
+      writeFileSync(join(projectSourcesDir, filename), buffer);
     }
 
     return NextResponse.json({ path: `/${folder}/${filename}` });
