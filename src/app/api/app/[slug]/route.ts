@@ -1,13 +1,8 @@
 import { NextResponse } from "next/server";
 import { mockApi } from "@/lib/api-client";
-import { mockApps } from "@/lib/mock-data";
 
 interface RouteParams {
   params: Promise<{ slug: string }>;
-}
-
-export function generateStaticParams() {
-  return mockApps.map((app) => ({ slug: app.slug }));
 }
 
 export async function GET(_request: Request, { params }: RouteParams) {
